@@ -1,0 +1,2911 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/7/2021 2:23:25 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SLEDGEHAMMER"
+  DTS:CreatorName="SLEDGEHAMMER\S"
+  DTS:DTSID="{C3C3AFFF-4933-42EC-BFB6-1DCA37779652}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.150"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{DC3D6F0C-437C-47D4-BE5D-FBCEB9C7D36E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dimBookingMethod Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{32E96814-9A24-4214-B3AA-2A195A1BEC95}"
+      DTS:ObjectName="dimBookingMethod Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\project2Data\Travel Agency - DW.xlsx - dimBookingMethod.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bookingMethodId"
+              DTS:DTSID="{ABB3446A-961B-43F5-9A65-FF52E5C2959A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bookingMethodType"
+              DTS:DTSID="{2975035E-4B6F-4B0B-9EBE-9CF966506626}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dimCustomer Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{882C7622-1B4D-495E-ABFB-5AA015485FCD}"
+      DTS:ObjectName="dimCustomer Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\project2Data\Travel Agency - DW.xlsx - dimCustomer.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custId"
+              DTS:DTSID="{1F323A23-BD31-47B6-877C-7287E5F7D364}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custName"
+              DTS:DTSID="{563ECA21-44EF-40BB-8A3C-740D8C8287F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custAddress"
+              DTS:DTSID="{4A9F9128-7256-4016-9A0B-94005DF27042}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custCity"
+              DTS:DTSID="{E1E25C62-07FF-4EE5-839D-935493A23ED1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custState"
+              DTS:DTSID="{B398331C-7FF9-4999-9075-C575FA44DB3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custCountry"
+              DTS:DTSID="{9E661361-D6FF-4426-B0CF-58EAD3AB8B25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custCountryCode"
+              DTS:DTSID="{555C9851-3259-49F7-BBE6-9105C655267D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custAge"
+              DTS:DTSID="{43EDEA62-EA9A-44AA-B4A8-D688C937194F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custGender"
+              DTS:DTSID="{2D8E4A9D-640D-43A3-BBF2-20EA53DB0B52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custRewardMemberLevel"
+              DTS:DTSID="{9DFC8141-A58F-4CF3-88E7-030F54EBEF48}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="custAccountType"
+              DTS:DTSID="{CDAE8B26-2E56-4702-ACC5-F71B5E489710}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dimDate Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9FB0E935-F053-43CF-B24A-17F878839E95}"
+      DTS:ObjectName="dimDate Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\project2Data\Travel Agency - DW.xlsx - dimDate.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dateId"
+              DTS:DTSID="{58F0C703-70E5-4464-9986-810FE22367D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="date"
+              DTS:DTSID="{3292E0C9-C9D5-4858-A7CE-E443D44090F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dateYear"
+              DTS:DTSID="{93D61240-45F2-4A1F-AEA5-0771D28E7B01}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dateMonth"
+              DTS:DTSID="{22155810-C9B2-41CE-A8FB-48455F3948F2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dateDay"
+              DTS:DTSID="{0C45C29D-29E6-44CC-8EAD-9855690FD750}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dateQuarter"
+              DTS:DTSID="{01593583-817A-437D-8D1F-DD024388C87F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dimHotels Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{35514775-0BEA-4204-9F43-80E9AA1CBC6A}"
+      DTS:ObjectName="dimHotels Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\project2Data\Travel Agency - DW.xlsx - dimHotels.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hotelId"
+              DTS:DTSID="{5447357A-8999-4796-9F02-3F5CF9008CA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hotelName"
+              DTS:DTSID="{8EC094E6-5D4B-4E39-80A8-71584053B29C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hotelAddress"
+              DTS:DTSID="{391DFFE0-0AB8-4F8F-AF1C-81F5787F0569}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="hotelNumRooms"
+              DTS:DTSID="{834D9A15-AF1B-4F43-8146-1CF9CCA6A633}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dimPaymentType Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{31807131-288E-4480-9450-55AADD6FC561}"
+      DTS:ObjectName="dimPaymentType Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\project2Data\Travel Agency - DW.xlsx - dimPaymentType.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="paymentTypeId"
+              DTS:DTSID="{8E51C02A-5744-4381-9D8E-418AE032234D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="paymentType"
+              DTS:DTSID="{AF66ABC4-A7D7-4E7C-BDFA-6DD44AC065CB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[dimRoomType Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{AC3D6CB5-34B1-4037-B7C1-9F6A2590BCC1}"
+      DTS:ObjectName="dimRoomType Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\project2Data\Travel Agency - DW.xlsx - dimRoomType.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="roomTypeId"
+              DTS:DTSID="{0222D693-A170-47E8-9E07-DAD5B2EC7F82}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="roomType"
+              DTS:DTSID="{4DD085AC-F3BD-453D-B6E8-DE6DF59668B1}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F7A6B96B-283B-4A61-97DA-FC53EC3228D0}"
+      DTS:ObjectName="SLEDGEHAMMER.WashingtonHotels">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SLEDGEHAMMER;Initial Catalog=WashingtonHotels;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import Booking Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C1600ACA-EC09-47A3-A998-46F232455819}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import Booking Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferMaxRows="100000"
+          version="1">
+          <components>
+            <component
+              refId="Package\Import Booking Data\dimBookingMethod Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimBookingMethod Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimBookingMethod Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimBookingMethod Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  connectionManagerRefId="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input].Columns[bookingMethodId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bookingMethodId"
+                      externalMetadataColumnId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodId]"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].Columns[bookingMethodId]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input].Columns[bookingMethodType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bookingMethodType"
+                      externalMetadataColumnId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodType]"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].Columns[bookingMethodType]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodId]"
+                      dataType="i4"
+                      name="bookingMethodId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bookingMethodType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimBookingMethod Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimBookingMethod Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="dimBookingMethod Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimBookingMethod Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dimBookingMethod Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[dimBookingMethod Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].Columns[bookingMethodId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].ExternalColumns[bookingMethodId]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].Columns[bookingMethodId]"
+                      name="bookingMethodId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].Columns[bookingMethodType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].ExternalColumns[bookingMethodType]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].Columns[bookingMethodType]"
+                      name="bookingMethodType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].ExternalColumns[bookingMethodId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bookingMethodId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output].ExternalColumns[bookingMethodType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bookingMethodType" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimCustomer Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimCustomer Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimCustomer Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimCustomer Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  connectionManagerRefId="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custId"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custId]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custId]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custName"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custName]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custName]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custAddress"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custAddress]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAddress]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custCity]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custCity"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custCity]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCity]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custState]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custState"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custState]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custState]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custCountry]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custCountry"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custCountry]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCountry]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custCountryCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custCountryCode"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custCountryCode]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCountryCode]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custAge]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custAge"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custAge]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAge]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custGender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custGender"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custGender]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custGender]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custRewardMemberLevel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custRewardMemberLevel"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custRewardMemberLevel]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custRewardMemberLevel]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].Columns[custAccountType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="custAccountType"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custAccountType]"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAccountType]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custId]"
+                      dataType="i4"
+                      name="custId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custName" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="custAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custCity" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custState" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custCountry]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custCountry" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custCountryCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custCountryCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custAge]"
+                      dataType="i4"
+                      name="custAge" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custGender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custGender" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custRewardMemberLevel]"
+                      dataType="i4"
+                      name="custRewardMemberLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input].ExternalColumns[custAccountType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custAccountType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimCustomer Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimCustomer Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimCustomer Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimCustomer Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="dimCustomer Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimCustomer Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dimCustomer Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[dimCustomer Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custId]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custId]"
+                      name="custId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custName]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custName]"
+                      name="custName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custAddress]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAddress]"
+                      name="custAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCity]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custCity]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCity]"
+                      name="custCity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custState]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custState]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custState]"
+                      name="custState"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCountry]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custCountry]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCountry]"
+                      name="custCountry"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCountryCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custCountryCode]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custCountryCode]"
+                      name="custCountryCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAge]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custAge]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAge]"
+                      name="custAge"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custGender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custGender]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custGender]"
+                      name="custGender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custRewardMemberLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custRewardMemberLevel]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custRewardMemberLevel]"
+                      name="custRewardMemberLevel"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAccountType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custAccountType]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].Columns[custAccountType]"
+                      name="custAccountType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custName" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custCity]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custCity" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custState]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custState" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custCountry]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custCountry" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custCountryCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custCountryCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custAge]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custAge" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custGender]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custGender" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custRewardMemberLevel]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custRewardMemberLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output].ExternalColumns[custAccountType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="custAccountType" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimDate Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimDate Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimDate Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimDate Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  connectionManagerRefId="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].Columns[dateId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="dateId"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateId]"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateId]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].Columns[date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].Columns[dateYear]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="dateYear"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateYear]"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateYear]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].Columns[dateMonth]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="dateMonth"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateMonth]"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateMonth]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].Columns[dateDay]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="dateDay"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateDay]"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateDay]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].Columns[dateQuarter]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="dateQuarter"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateQuarter]"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateQuarter]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateId]"
+                      dataType="i4"
+                      name="dateId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateYear]"
+                      dataType="i4"
+                      name="dateYear" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateMonth]"
+                      dataType="i4"
+                      name="dateMonth" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateDay]"
+                      dataType="i4"
+                      name="dateDay" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input].ExternalColumns[dateQuarter]"
+                      dataType="i4"
+                      name="dateQuarter" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimDate Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimDate Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimDate Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimDate Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="dimDate Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimDate Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dimDate Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[dimDate Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateId]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateId]"
+                      name="dateId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[date]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateYear]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateYear]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateYear]"
+                      name="dateYear"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateMonth]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateMonth]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateMonth]"
+                      name="dateMonth"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateDay]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateDay]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateDay]"
+                      name="dateDay"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateQuarter]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateQuarter]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].Columns[dateQuarter]"
+                      name="dateQuarter"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="dateId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateYear]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="dateYear" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateMonth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="dateMonth" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateDay]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="dateDay" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output].ExternalColumns[dateQuarter]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="dateQuarter" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimHotels Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimHotels Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimHotels Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimHotels Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  connectionManagerRefId="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].Columns[hotelId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hotelId"
+                      externalMetadataColumnId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelId]"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelId]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].Columns[hotelName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="hotelName"
+                      externalMetadataColumnId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelName]"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelName]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].Columns[hotelAddress]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hotelAddress"
+                      externalMetadataColumnId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelAddress]"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelAddress]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].Columns[hotelNumRooms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="hotelNumRooms"
+                      externalMetadataColumnId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelNumRooms]"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelNumRooms]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelId]"
+                      dataType="i4"
+                      name="hotelId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="hotelName" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hotelAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input].ExternalColumns[hotelNumRooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hotelNumRooms" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimHotels Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimHotels Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimHotels Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimHotels Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimPaymentType Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimPaymentType Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimPaymentType Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimPaymentType Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  connectionManagerRefId="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input].Columns[paymentTypeId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="paymentTypeId"
+                      externalMetadataColumnId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input].ExternalColumns[paymentTypeId]"
+                      lineageId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].Columns[paymentTypeId]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input].Columns[paymentType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="paymentType"
+                      externalMetadataColumnId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input].ExternalColumns[paymentType]"
+                      lineageId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].Columns[paymentType]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input].ExternalColumns[paymentTypeId]"
+                      dataType="i4"
+                      name="paymentTypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input].ExternalColumns[paymentType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="paymentType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimPaymentType Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimPaymentType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimPaymentType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimPaymentType Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="dimPaymentType Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimPaymentType Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dimPaymentType Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[dimPaymentType Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].Columns[paymentTypeId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].ExternalColumns[paymentTypeId]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].Columns[paymentTypeId]"
+                      name="paymentTypeId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].Columns[paymentType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].ExternalColumns[paymentType]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].Columns[paymentType]"
+                      name="paymentType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].ExternalColumns[paymentTypeId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="paymentTypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output].ExternalColumns[paymentType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="paymentType" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimRoomType Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="dimRoomType Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dimRoomType Destination]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimRoomType Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  connectionManagerRefId="Package.ConnectionManagers[SLEDGEHAMMER.WashingtonHotels]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input].Columns[roomTypeId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="roomTypeId"
+                      externalMetadataColumnId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input].ExternalColumns[roomTypeId]"
+                      lineageId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].Columns[roomTypeId]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input].Columns[roomType]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="roomType"
+                      externalMetadataColumnId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input].ExternalColumns[roomType]"
+                      lineageId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].Columns[roomType]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input].ExternalColumns[roomTypeId]"
+                      dataType="i4"
+                      name="roomTypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input].ExternalColumns[roomType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="roomType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimRoomType Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimRoomType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimRoomType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimRoomType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimRoomType Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\dimRoomType Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="dimRoomType Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\dimRoomType Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dimRoomType Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[dimRoomType Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].Columns[roomTypeId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].ExternalColumns[roomTypeId]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].Columns[roomTypeId]"
+                      name="roomTypeId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].Columns[roomType]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].ExternalColumns[roomType]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].Columns[roomType]"
+                      name="roomType"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].ExternalColumns[roomTypeId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="roomTypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output].ExternalColumns[roomType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="roomType" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Booking Data\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[dimHotels Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[dimHotels Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelId]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelId]"
+                      name="hotelId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelName]"
+                      length="100"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelName]"
+                      name="hotelName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelAddress]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelAddress]"
+                      name="hotelAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelNumRooms]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelNumRooms]"
+                      length="50"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].Columns[hotelNumRooms]"
+                      name="hotelNumRooms"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hotelId" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="hotelName" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hotelAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[hotelNumRooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="hotelNumRooms" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import Booking Data.Paths[Flat File Source Output]"
+              endId="Package\Import Booking Data\dimBookingMethod Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import Booking Data\dimBookingMethod Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Import Booking Data.Paths[Flat File Source Output1]"
+              endId="Package\Import Booking Data\dimCustomer Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import Booking Data\dimCustomer Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Import Booking Data.Paths[Flat File Source Output2]"
+              endId="Package\Import Booking Data\dimDate Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import Booking Data\dimDate Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Import Booking Data.Paths[Flat File Source Output3]"
+              endId="Package\Import Booking Data\dimPaymentType Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import Booking Data\dimPaymentType Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Import Booking Data.Paths[Flat File Source Output4]"
+              endId="Package\Import Booking Data\dimRoomType Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import Booking Data\dimRoomType Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Import Booking Data.Paths[Flat File Source Output5]"
+              endId="Package\Import Booking Data\dimHotels Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import Booking Data\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Import Booking Data"
+          TopLeft="515,139" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import Booking Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Import Booking Data\dimBookingMethod Source"
+          TopLeft="54,42" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Import Booking Data\dimCustomer Source"
+          TopLeft="271,42" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Import Booking Data\dimDate Source"
+          TopLeft="456,41" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Import Booking Data\dimPaymentType Source"
+          TopLeft="784,41" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Import Booking Data\dimRoomType Source"
+          TopLeft="999,43" />
+        <NodeLayout
+          Size="225,42"
+          Id="Package\Import Booking Data\dimBookingMethod Destination"
+          TopLeft="30,234" />
+        <EdgeLayout
+          Id="Package\Import Booking Data.Paths[Flat File Source Output]"
+          TopLeft="156,84">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.5,150"
+              Start="0,0"
+              End="-13.5,142.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,71"
+                    Point2="0,75"
+                    Point3="-4,75" />
+                  <mssgle:LineSegment
+                    End="-9.5,75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.5,75"
+                    Point2="-13.5,75"
+                    Point3="-13.5,79" />
+                  <mssgle:LineSegment
+                    End="-13.5,142.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="197,42"
+          Id="Package\Import Booking Data\dimCustomer Destination"
+          TopLeft="251,296" />
+        <EdgeLayout
+          Id="Package\Import Booking Data.Paths[Flat File Source Output1]"
+          TopLeft="359.5,84">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10,212"
+              Start="0,0"
+              End="-10,204.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,102" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,102"
+                    Point2="0,106"
+                    Point3="-4,106" />
+                  <mssgle:LineSegment
+                    End="-6,106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6,106"
+                    Point2="-10,106"
+                    Point3="-10,110" />
+                  <mssgle:LineSegment
+                    End="-10,204.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Import Booking Data\dimDate Destination"
+          TopLeft="449,235" />
+        <EdgeLayout
+          Id="Package\Import Booking Data.Paths[Flat File Source Output2]"
+          TopLeft="534.75,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,152"
+              Start="0,0"
+              End="0,144.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,144.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="216,42"
+          Id="Package\Import Booking Data\dimPaymentType Destination"
+          TopLeft="762,230" />
+        <EdgeLayout
+          Id="Package\Import Booking Data.Paths[Flat File Source Output3]"
+          TopLeft="882,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12,147"
+              Start="0,0"
+              End="-12,139.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,69.5"
+                    Point2="0,73.5"
+                    Point3="-4,73.5" />
+                  <mssgle:LineSegment
+                    End="-8,73.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8,73.5"
+                    Point2="-12,73.5"
+                    Point3="-12,77.5" />
+                  <mssgle:LineSegment
+                    End="-12,139.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="203,42"
+          Id="Package\Import Booking Data\dimRoomType Destination"
+          TopLeft="978,295" />
+        <EdgeLayout
+          Id="Package\Import Booking Data.Paths[Flat File Source Output4]"
+          TopLeft="1090,85">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.5,210"
+              Start="0,0"
+              End="-10.5,202.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,101" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,101"
+                    Point2="0,105"
+                    Point3="-4,105" />
+                  <mssgle:LineSegment
+                    End="-6.5,105" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.5,105"
+                    Point2="-10.5,105"
+                    Point3="-10.5,109" />
+                  <mssgle:LineSegment
+                    End="-10.5,202.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Import Booking Data\dimHotels Destination"
+          TopLeft="605,315" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Import Booking Data\Flat File Source"
+          TopLeft="629,38" />
+        <EdgeLayout
+          Id="Package\Import Booking Data.Paths[Flat File Source Output5]"
+          TopLeft="704.5,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.5,235"
+              Start="0,0"
+              End="-8.5,227.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,113.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,113.5"
+                    Point2="0,117.5"
+                    Point3="-4,117.5" />
+                  <mssgle:LineSegment
+                    End="-4.5,117.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.5,117.5"
+                    Point2="-8.5,117.5"
+                    Point3="-8.5,121.5" />
+                  <mssgle:LineSegment
+                    End="-8.5,227.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Booking Data\dimBookingMethod Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Booking Data\dimCustomer Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Booking Data\dimDate Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Booking Data\dimPaymentType Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Booking Data\dimRoomType Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Booking Data\dimHotels Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
