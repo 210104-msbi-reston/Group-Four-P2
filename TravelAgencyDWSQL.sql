@@ -30,80 +30,80 @@ select * from [factBookings]
 
 --create [dimBookingMethod] table
 CREATE TABLE [dbo].[dimBookingMethod](
-	[Copy of bookingMethodId] [int] primary key,
-	[Copy of bookingMethodType] [varchar](255) NULL
+	[bookingMethodId] [int] primary key,
+	[bookingMethodType] [varchar](255) NULL
 )
 --end create [dimBookingMethod] table
 
 --create [dimCustomer] table
 CREATE TABLE [dbo].[dimCustomer](
-	[Copy of custId] [int] primary key,
-	[Copy of custName] [varchar](255) NULL,
-	[Copy of custAddress] [varchar](255) NULL,
-	[Copy of custCity] [varchar](255) NULL,
-	[Copy of custState] [varchar](255) NULL,
-	[Copy of custCountry] [varchar](255) NULL,
-	[Copy of custCountryCode] [varchar](255) NULL,
-	[Copy of custAge] [int] NULL,
-	[Copy of custGender] [varchar](255) NULL,
-	[Copy of custRewardMemberLevel] [int] NULL,
-	[Copy of custAccountType] [varchar](50) NULL
+	[custId] [int] primary key,
+	[custName] [varchar](255) NULL,
+	[custAddress] [varchar](255) NULL,
+	[custCity] [varchar](255) NULL,
+	[custState] [varchar](255) NULL,
+	[custCountry] [varchar](255) NULL,
+	[custCountryCode] [varchar](255) NULL,
+	[custAge] [int] NULL,
+	[custGender] [varchar](255) NULL,
+	[custRewardMemberLevel] [int] NULL,
+	[custAccountType] [varchar](50) NULL
 )
 --end create [dimCustomer] table
 
 --create [dimDate] table
 CREATE TABLE [dbo].[dimDate](
-	[Copy of dateId] [int] primary key,
-	[Copy of date] [varchar](50) NULL,
-	[Copy of dateYear] [int] NULL,
-	[Copy of dateMonth] [int] NULL,
-	[Copy of dateWeek] [int] NULL,
-	[Copy of dateDay] [int] NULL,
-	[Copy of dateQuarter] [int] NULL
+	[dateId] [int] primary key,
+	[date] [varchar](50) NULL,
+	[dateYear] [int] NULL,
+	[dateMonth] [int] NULL,
+	[dateWeek] [int] NULL,
+	[dateDay] [int] NULL,
+	[dateQuarter] [int] NULL
 ) 
 --end create [dimDate] table
 
 --create [dimHotel] table
 CREATE TABLE [dbo].[dimHotel](
-	[Copy of id] [int] primary key,
-	[Copy of hotelName] [varchar](255) NULL,
-	[Copy of hotelAddress] [varchar](255) NULL,
-	[Copy of hotelNumRooms] [int] NULL
+	[id] [int] primary key,
+	[hotelName] [varchar](255) NULL,
+	[hotelAddress] [varchar](255) NULL,
+	[hotelNumRooms] [int] NULL
 )
 --end create [dimHotel] table
 
 --create [dimPaymentTypes] table
 CREATE TABLE [dbo].[dimPaymentTypes](
-	[Copy of paymentTypeId] [int] primary key,
-	[Copy of paymentType] [varchar](255) NULL
+	[paymentTypeId] [int] primary key,
+	[paymentType] [varchar](255) NULL
 ) 
 --end create [dimPaymentTypes] table
 
 --create [dimRoomTypes] table
 CREATE TABLE [dbo].[dimRoomTypes](
-	[Copy of roomTypeId] [int] primary key,
-	[Copy of roomType] [varchar](255) NULL
+	[roomTypeId] [int] primary key,
+	[roomType] [varchar](255) NULL
 )
 --end create [dimRoomTypes] table
 
 --create [factBookings] table
 CREATE TABLE [factBookings] (
-    [Copy of factBookingId] int,
-    [Copy of hotelId] int,
-    [Copy of startDateId] int,
-    [Copy of endDateId] int,
-    [Copy of custId] int,
-    [Copy of bookingMethodId] int,
-    [Copy of paymentTypeId] int,
-    [Copy of roomTypeId] int,
-    [Copy of cost] int,
-    FOREIGN KEY ( [Copy of hotelId]) REFERENCES dimHotel([Copy of Id]),
-    FOREIGN KEY ([Copy of startDateId]) REFERENCES dimDate([Copy of dateId]),
-    FOREIGN KEY ([Copy of endDateId]) REFERENCES dimDate([Copy of dateId]),
-    FOREIGN KEY ( [Copy of custId]) REFERENCES dimCustomer([Copy of custId]),
-    FOREIGN KEY ([Copy of bookingMethodId]) REFERENCES dimBookingMethod([Copy of bookingMethodId]),
-    FOREIGN KEY ( [Copy of paymentTypeId]) REFERENCES dimPaymentTypes( [Copy of paymentTypeId]),
-    FOREIGN KEY ( [Copy of roomTypeId] ) REFERENCES dimRoomTypes( [Copy of roomTypeId] )
+    [factBookingId] int,
+    [hotelId] int,
+    [startDateId] int,
+    [endDateId] int,
+    [custId] int,
+    bookingMethodId int,
+    [paymentTypeId] int,
+    [roomTypeId] int,
+    [cost] int,
+    FOREIGN KEY ( [hotelId]) REFERENCES dimHotel([Id]),
+    FOREIGN KEY ([startDateId]) REFERENCES dimDate([dateId]),
+    FOREIGN KEY ([endDateId]) REFERENCES dimDate([dateId]),
+    FOREIGN KEY ( [custId]) REFERENCES dimCustomer([custId]),
+    FOREIGN KEY ([bookingMethodId]) REFERENCES dimBookingMethod([bookingMethodId]),
+    FOREIGN KEY ( [paymentTypeId]) REFERENCES dimPaymentTypes( [paymentTypeId]),
+    FOREIGN KEY ( [roomTypeId] ) REFERENCES dimRoomTypes( [roomTypeId] )
 )
 --end create [factBookings] table
 

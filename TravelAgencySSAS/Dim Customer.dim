@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a7283338-b8b9-44ba-aceb-6ecf79d76616" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4aa4149c-6258-460c-9e68-e6d46f6dc976" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Customer</ID>
   <Name>Dim Customer</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2441" scrolltop="-5054" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2957" scrolltop="-5054" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,9 +19,9 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimCustomer" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5450" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimCustomer" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e00004a15000088130000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e00004311000088130000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -47,7 +47,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-2441</Value>
+      <Value>-2957</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -68,229 +68,229 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5cd0e9f1-165b-41c7-909f-9e3b95fd4546">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a85f7910-e278-44d6-ac34-d6a3de64eb50">
     <DataSourceViewID>Travel Agency DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="7518ac47-9232-449f-a6bf-344e10b6ab18">
+  <ErrorConfiguration dwd:design-time-name="a59228c0-1ec6-4b1a-ac2d-119ace6d940e">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="385826e9-262b-4158-ac62-34c44e71f44c">
-      <ID>Copy Of Cust Id</ID>
-      <Name>Copy Of Cust Id</Name>
+    <Attribute dwd:design-time-name="835bc76d-5d3a-43da-a0fb-e6a6f7a546ec">
+      <ID>Cust Id</ID>
+      <Name>Cust Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="80e31e34-1300-469c-bbf2-7455e2bdad95">
+        <KeyColumn dwd:design-time-name="877f33f6-e240-409b-8e37-ae6e78f535a9">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4db0397a-c03b-4ee1-b16b-a1fffe544765">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ddce67ff-47b2-415e-8e00-85fb46d412a7">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custId</ColumnID>
+            <ColumnID>custId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="d54ceab7-0b99-4774-943d-0daa6ea07884">
-          <AttributeID>Copy Of Cust Name</AttributeID>
-          <Name>Copy Of Cust Name</Name>
+        <AttributeRelationship dwd:design-time-name="8d419c7e-fbea-4418-a399-db287fb65d91">
+          <AttributeID>Cust Name</AttributeID>
+          <Name>Cust Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="be73bbf0-f28f-43d5-922a-442215f0757d">
-          <AttributeID>Copy Of Cust Address</AttributeID>
-          <Name>Copy Of Cust Address</Name>
+        <AttributeRelationship dwd:design-time-name="814f4fe6-d0ad-423c-bdf4-cc254ed00b37">
+          <AttributeID>Cust Address</AttributeID>
+          <Name>Cust Address</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5981f9bf-9934-49f9-b0f2-30393b85344e">
-          <AttributeID>Copy Of Cust City</AttributeID>
-          <Name>Copy Of Cust City</Name>
+        <AttributeRelationship dwd:design-time-name="132588a9-2373-4fe7-827f-739e30748c09">
+          <AttributeID>Cust City</AttributeID>
+          <Name>Cust City</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7b9e4b30-327b-4042-a54f-3b140ded21f3">
-          <AttributeID>Copy Of Cust State</AttributeID>
-          <Name>Copy Of Cust State</Name>
+        <AttributeRelationship dwd:design-time-name="17a99f14-7b20-4e95-b3b5-73bccd69015e">
+          <AttributeID>Cust State</AttributeID>
+          <Name>Cust State</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a3b42516-f33e-4e41-9f7a-1ad480a0c4dc">
-          <AttributeID>Copy Of Cust Country</AttributeID>
-          <Name>Copy Of Cust Country</Name>
+        <AttributeRelationship dwd:design-time-name="a9b9e8ed-fda9-4b15-9fdb-7803a2f115b1">
+          <AttributeID>Cust Country</AttributeID>
+          <Name>Cust Country</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="595f319f-7d33-48c5-a658-afa30867a394">
-          <AttributeID>Copy Of Cust Country Code</AttributeID>
-          <Name>Copy Of Cust Country Code</Name>
+        <AttributeRelationship dwd:design-time-name="26883fc8-d2c7-4817-9f81-7b2f15479d16">
+          <AttributeID>Cust Country Code</AttributeID>
+          <Name>Cust Country Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d73fad41-40f4-431f-adbb-5abdc05da4d8">
-          <AttributeID>Copy Of Cust Age</AttributeID>
-          <Name>Copy Of Cust Age</Name>
+        <AttributeRelationship dwd:design-time-name="f6f341a5-192a-4389-98e7-4ea2e6ff6e3b">
+          <AttributeID>Cust Age</AttributeID>
+          <Name>Cust Age</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="773930ae-93d8-4689-a93b-073c9aa75833">
-          <AttributeID>Copy Of Cust Gender</AttributeID>
-          <Name>Copy Of Cust Gender</Name>
+        <AttributeRelationship dwd:design-time-name="dcd06fd8-c8ae-4d5a-be44-897f334a12af">
+          <AttributeID>Cust Gender</AttributeID>
+          <Name>Cust Gender</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b56c3744-2844-4be0-bf70-b6ab60b20304">
-          <AttributeID>Copy Of Cust Reward Member Level</AttributeID>
-          <Name>Copy Of Cust Reward Member Level</Name>
+        <AttributeRelationship dwd:design-time-name="b304e794-b848-43b2-b5f4-c4eef2d2bf18">
+          <AttributeID>Cust Reward Member Level</AttributeID>
+          <Name>Cust Reward Member Level</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4218f0d6-1fbb-4ec8-9749-770effbebd3c">
-          <AttributeID>Copy Of Cust Account Type</AttributeID>
-          <Name>Copy Of Cust Account Type</Name>
+        <AttributeRelationship dwd:design-time-name="dea48361-30ce-4e87-be9a-5cdd8e9f227b">
+          <AttributeID>Cust Account Type</AttributeID>
+          <Name>Cust Account Type</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8c308c32-f9c4-4928-9db9-19f86d63d475">
-      <ID>Copy Of Cust Name</ID>
-      <Name>Copy Of Cust Name</Name>
+    <Attribute dwd:design-time-name="35944c9c-aa61-4a90-a64a-cafdc30e9e53">
+      <ID>Cust Name</ID>
+      <Name>Cust Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3a50f067-f9c7-44f7-9847-23f03d50cec2">
+        <KeyColumn dwd:design-time-name="0c1f2405-a90c-41f3-972b-0a5cc6887eaa">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea5dbf0b-0155-4fee-a192-b511260923c9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4300f3f5-9a4e-4009-a691-81ff19e28b47">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custName</ColumnID>
+            <ColumnID>custName</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c233b4d0-e37c-44d5-af20-75efab03d189">
-      <ID>Copy Of Cust Address</ID>
-      <Name>Copy Of Cust Address</Name>
+    <Attribute dwd:design-time-name="6e713043-0a87-48c9-b966-4022fcc91d7d">
+      <ID>Cust Address</ID>
+      <Name>Cust Address</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="01a321c1-114b-4511-8d96-091569dd5c6e">
+        <KeyColumn dwd:design-time-name="8af6de64-22e3-4bc7-8025-904f5a2f36af">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7695fb45-e73c-4bd7-8571-ac0dc030aba1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5eadc0b8-6417-4dbd-8579-15acac6e519b">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custAddress</ColumnID>
+            <ColumnID>custAddress</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4cec9ba8-5509-49d4-83b7-813dd94c37bb">
-      <ID>Copy Of Cust City</ID>
-      <Name>Copy Of Cust City</Name>
+    <Attribute dwd:design-time-name="b99c8678-91c5-4855-a3da-3841349341ce">
+      <ID>Cust City</ID>
+      <Name>Cust City</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4ea2b875-a280-476d-bce4-01bafa21f285">
+        <KeyColumn dwd:design-time-name="639c814a-d11b-4b84-8000-fbba08e4a766">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="800163a6-bf00-4a16-b157-6bce1e46300a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4c52135-f357-4a98-85a0-1291bc26b652">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custCity</ColumnID>
+            <ColumnID>custCity</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="db56cd7c-67cb-46d0-8588-3bc2e5d6d9b0">
-      <ID>Copy Of Cust State</ID>
-      <Name>Copy Of Cust State</Name>
+    <Attribute dwd:design-time-name="bfc88ac8-0f34-48d1-9e94-f71f749fba19">
+      <ID>Cust State</ID>
+      <Name>Cust State</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ce5486af-d234-487f-aacc-605e1795aba0">
+        <KeyColumn dwd:design-time-name="023b1182-eb98-4f72-9f2e-fc928601c449">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f99085d-a952-4298-a2d4-f9dc900ee37b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b49f09f5-bd3e-47b1-92b7-c16fbf4e0e0c">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custState</ColumnID>
+            <ColumnID>custState</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b113293f-0534-44fc-8713-17a87548169e">
-      <ID>Copy Of Cust Country</ID>
-      <Name>Copy Of Cust Country</Name>
+    <Attribute dwd:design-time-name="5ba44d42-fcb2-45eb-a32b-377b366f3900">
+      <ID>Cust Country</ID>
+      <Name>Cust Country</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="46181410-fab2-461e-ba61-5e9e14033cda">
+        <KeyColumn dwd:design-time-name="727fda4e-f854-488b-b766-9a2401ee88af">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="eae24454-98db-492f-8009-f6a97aa815fc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5544af1a-8a15-41e1-8bc5-84405be548bd">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custCountry</ColumnID>
+            <ColumnID>custCountry</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f85004e6-0304-44c9-a8be-fde4f5679fa9">
-      <ID>Copy Of Cust Country Code</ID>
-      <Name>Copy Of Cust Country Code</Name>
+    <Attribute dwd:design-time-name="893f45cb-d3fc-41d0-b321-79a5675ae25c">
+      <ID>Cust Country Code</ID>
+      <Name>Cust Country Code</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9a96d2e3-71e4-4e8a-b9df-3efd991be404">
+        <KeyColumn dwd:design-time-name="05338a6e-6968-4787-b652-e4b65495dc2f">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbf3c10d-37c7-49c7-830e-e0e7d57c23ab">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d61d81d5-7a7d-42fb-bcac-a72d8a91f544">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custCountryCode</ColumnID>
+            <ColumnID>custCountryCode</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="79577cc8-7452-4e08-83c5-99b44bc31e66">
-      <ID>Copy Of Cust Age</ID>
-      <Name>Copy Of Cust Age</Name>
+    <Attribute dwd:design-time-name="d7ab0b1b-f94f-4a80-b850-47170f6868dd">
+      <ID>Cust Age</ID>
+      <Name>Cust Age</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cffe7aed-d2d0-4de1-a64d-d22b42a55857">
+        <KeyColumn dwd:design-time-name="8c110dd6-d05a-495a-815a-96d1cbc7b89d">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="15e4ab14-bb80-4e52-87a8-e2ccd8749757">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd983c8b-d30a-427a-8b41-4b0c367c0517">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custAge</ColumnID>
+            <ColumnID>custAge</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d7a71d76-2cd7-4136-bc02-7e501286af14">
-      <ID>Copy Of Cust Gender</ID>
-      <Name>Copy Of Cust Gender</Name>
+    <Attribute dwd:design-time-name="0b737827-20ee-418b-a680-bbeb2ef5cc8e">
+      <ID>Cust Gender</ID>
+      <Name>Cust Gender</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="44326576-a39c-410e-af0e-ac74c93babc6">
+        <KeyColumn dwd:design-time-name="a752f7a2-bd8f-41cd-8f45-b46dad6ba32f">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="df43711a-507f-427e-9f49-7fb2d6ea1e41">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f81883a-40cb-409a-b0c9-e5bc6d6a1f86">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custGender</ColumnID>
+            <ColumnID>custGender</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6d4d196b-2dbc-43fa-ad24-a4276d3316c2">
-      <ID>Copy Of Cust Reward Member Level</ID>
-      <Name>Copy Of Cust Reward Member Level</Name>
+    <Attribute dwd:design-time-name="726a7928-f8c2-48ff-9b87-076014de4d23">
+      <ID>Cust Reward Member Level</ID>
+      <Name>Cust Reward Member Level</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f876cc97-4f25-43cc-a5bb-f1715c0359df">
+        <KeyColumn dwd:design-time-name="393c4fdc-4729-4bca-b651-b2a18baab363">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="624f3a6f-f2ff-4c5e-b58b-9d3829c5fb54">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c372dcae-b2f1-4ffa-9209-f94a2c00b871">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custRewardMemberLevel</ColumnID>
+            <ColumnID>custRewardMemberLevel</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3dbd5c51-60a2-4a5f-bf1d-59faaccbb1bc">
-      <ID>Copy Of Cust Account Type</ID>
-      <Name>Copy Of Cust Account Type</Name>
+    <Attribute dwd:design-time-name="6b9ea48c-17fe-47d1-91ad-f79914e91d27">
+      <ID>Cust Account Type</ID>
+      <Name>Cust Account Type</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="40890ac4-ece2-4cd4-b782-a2cf3418a621">
+        <KeyColumn dwd:design-time-name="d3048140-392a-4ea3-b7ba-c50e078836ca">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="373b988f-4523-4bf8-ad5a-7b9d4e01b07b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f2264a4-5a31-4da9-8ed6-809bf7ed5a27">
             <TableID>dbo_dimCustomer</TableID>
-            <ColumnID>Copy_x0020_of_x0020_custAccountType</ColumnID>
+            <ColumnID>custAccountType</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
