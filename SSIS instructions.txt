@@ -1,6 +1,0 @@
-----How to use Travel Agency SSIS----
-1. you must have the Travel Agency - DW ver2 excel document in a folder called project2Data this folder must be located at the root of C drive
-
-2. you must have the DW tables on your server (you can do this by running the SQL located in the TravelAgencyDWSQL.sql file)
-
-3. you need to change the connection manager from SLEDGEHAMMER.TravelAgencyDW to YOURSERVERNAME.TravelAgencyDW
