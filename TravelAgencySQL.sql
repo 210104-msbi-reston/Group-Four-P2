@@ -61,7 +61,6 @@ create table Booking_Dates
 	booking_day int not null,
 	booking_week int not null,
 	fk_booking_month int not null,
-	booking_quarter int not null,
 	booking_year int not null,
 	FOREIGN KEY (fk_booking_month) REFERENCES Month_Quarters(pk_month_id)
 )
@@ -138,6 +137,11 @@ create table Bookings
 )
 --end create Bookings table
 
+select * from Room_Types
+
+insert into Room_Types values (1,'Two Queen')
+insert into Room_Types values (2,'King')
+insert into Room_Types values (3,'Suite')
 
 
 if Object_id('Cost_Per_Night') is not null
