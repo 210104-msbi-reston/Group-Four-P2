@@ -19,63 +19,63 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>5Hxrk49xphutKSzwcle154d8DjY=2/10/2021 11:07:17 PM2/10/2021 11:07:17 PM</TimeStamp>
+        <TimeStamp>WEE7tw2SxMkwMaTwXYGzWnQXeUM=2/11/2021 10:43:46 AM2/11/2021 10:43:46 AM</TimeStamp>
         <ID>
           <String>Travel Agency DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>hEwWFvono58m1+BJvWpYwr9JMPc=2/10/2021 11:07:32 PM2/10/2021 11:07:32 PM</TimeStamp>
+        <TimeStamp>L04Fnc0U9sHayH8TAdKRSPG5xoQ=2/11/2021 10:44:00 AM2/11/2021 10:44:00 AM</TimeStamp>
         <ID>
           <String>Travel Agency DW</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>4TccupME2kjznmZeRxNZKqz+c4g=2/10/2021 11:09:59 PM2/10/2021 11:08:01 PM</TimeStamp>
-        <ID>
-          <String>Dim Date</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>685MJ01K1PjjfMBPAhdP8u+DaZg=2/10/2021 11:09:59 PM2/10/2021 11:08:01 PM</TimeStamp>
-        <ID>
-          <String>Dim Room Types</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>VZ5Yf4wEXoffKV9Tp/oDpNe8B6s=2/10/2021 11:09:59 PM2/10/2021 11:08:01 PM</TimeStamp>
+        <TimeStamp>DZX1qWJlnZo6iyi5QukFLN5YeYo=2/11/2021 10:45:27 AM2/11/2021 10:44:27 AM</TimeStamp>
         <ID>
           <String>Dim Customer</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>vNXXAIWBUNXM621G85YKXTocQQY=2/10/2021 11:09:59 PM2/10/2021 11:08:01 PM</TimeStamp>
+        <TimeStamp>SG2gehozON/2a4XA/0p1S/tEIz4=2/11/2021 10:45:27 AM2/11/2021 10:44:27 AM</TimeStamp>
+        <ID>
+          <String>Dim Booking Method</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7+0LbKSHZ0lBN7YAIGK5cp+u3xs=2/11/2021 10:45:27 AM2/11/2021 10:44:27 AM</TimeStamp>
+        <ID>
+          <String>Dim Room Types</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rxsN8rmiOmpMzwadUosdneLoOPc=2/11/2021 10:45:27 AM2/11/2021 10:44:27 AM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1iM4ar51Vayv258zgXrn+lT/Tac=2/11/2021 10:45:27 AM2/11/2021 10:44:27 AM</TimeStamp>
         <ID>
           <String>Dim Hotel</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>/K5wo/vUJpo+L8uA8r+1otEBf/A=2/10/2021 11:09:59 PM2/10/2021 11:08:01 PM</TimeStamp>
+        <TimeStamp>ztEwwV/7C6nJBm0l7VUfUkSSrJQ=2/11/2021 10:45:27 AM2/11/2021 10:44:27 AM</TimeStamp>
         <ID>
           <String>Dim Payment Types</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>R0E8nZ0MoDsNw6gVZhGsrYt0Fe0=2/10/2021 11:09:59 PM2/10/2021 11:08:01 PM</TimeStamp>
-        <ID>
-          <String>Dim Booking Method</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>sn1bc4j9qkHbS9xAoexxN36rhW8=2/10/2021 11:09:59 PM2/10/2021 11:08:01 PMnNJXR47MAqCzcs4Dpvtbz7ByEWY=2/10/2021 11:08:01 PM2/10/2021 11:08:01 PM</TimeStamp>
+        <TimeStamp>16fMGUbthF4PHq8K+FYdsJ7eSYo=2/11/2021 10:45:27 AM2/11/2021 10:44:26 AMT6bpLNHF4rUXfuC8e1OOgpT8QIA=2/11/2021 10:44:27 AM2/11/2021 10:44:27 AM</TimeStamp>
         <ID>
           <String>Travel Agency DW</String>
         </ID>
@@ -92,5 +92,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2021-02-11T05:10:02.98Z</LastDeployed>
+  <LastDeployed>2021-02-11T16:45:36.11Z</LastDeployed>
 </DeploymentSnapshot>

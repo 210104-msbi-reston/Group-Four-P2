@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0213173d-17b9-4a51-ba3f-7ec0b7d70e60" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f75e2423-b41e-441f-b84a-a0dde58d7fce" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Booking Method</ID>
   <Name>Dim Booking Method</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2745" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3261" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,9 +19,9 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimBookingMethod" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4842" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimBookingMethod" left="-298" top="-212" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000ea12000057070000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20e000057070000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -47,7 +47,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-2745</Value>
+      <Value>-3261</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -55,11 +55,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>20</Value>
+      <Value>-298</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>0</Value>
+      <Value>-212</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -68,51 +68,51 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="cbc064cc-6b5f-4667-ae9d-d59f5bef7ede">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e341c981-4480-40a5-aa36-60743a52b89b">
     <DataSourceViewID>Travel Agency DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="e606782a-3ae5-4e83-b4a4-27496af26a51">
+  <ErrorConfiguration dwd:design-time-name="ad70fed6-80ce-47aa-a6e1-838fe0f612d3">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="1fde6547-759a-4635-9426-d8bff624b2c3">
-      <ID>Copy Of Booking Method Id</ID>
-      <Name>Copy Of Booking Method Id</Name>
+    <Attribute dwd:design-time-name="73648bb8-1b55-4f1d-8332-a29a89c8b157">
+      <ID>Booking Method Id</ID>
+      <Name>Booking Method Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="83efcd39-2ce9-4cdf-a6bc-5a9948427daf">
+        <KeyColumn dwd:design-time-name="da1e0e6a-89a6-4d72-84c9-11c425d4c30b">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6797d76e-2cb2-4716-9dea-2732f59802b6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63e4afd8-7aea-4ef3-b74a-b44ab801e2ab">
             <TableID>dbo_dimBookingMethod</TableID>
-            <ColumnID>Copy_x0020_of_x0020_bookingMethodId</ColumnID>
+            <ColumnID>bookingMethodId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="91dc325a-dcf5-4b36-b069-43eb43bd7308">
-          <AttributeID>Copy Of Booking Method Type</AttributeID>
-          <Name>Copy Of Booking Method Type</Name>
+        <AttributeRelationship dwd:design-time-name="5654b07d-42c3-47e7-8877-0919b715fbb1">
+          <AttributeID>Booking Method Type</AttributeID>
+          <Name>Booking Method Type</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="30436d11-40c6-4991-91de-484299cbfe59">
-      <ID>Copy Of Booking Method Type</ID>
-      <Name>Copy Of Booking Method Type</Name>
+    <Attribute dwd:design-time-name="68b25534-c995-46df-831d-436a203f9972">
+      <ID>Booking Method Type</ID>
+      <Name>Booking Method Type</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="aa9fd7b0-1df7-43d0-8975-fa3a33b64149">
+        <KeyColumn dwd:design-time-name="d1ab2ae3-13c0-4d3c-9a6f-35adc81f8f5d">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6dc395b-3e1b-4db7-9657-656ab63009e1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69a33612-3100-4d82-9dca-737f993e894d">
             <TableID>dbo_dimBookingMethod</TableID>
-            <ColumnID>Copy_x0020_of_x0020_bookingMethodType</ColumnID>
+            <ColumnID>bookingMethodType</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

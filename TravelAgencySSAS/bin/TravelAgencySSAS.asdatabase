@@ -1,359 +1,16 @@
 ﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>TravelAgencySSAS</ID>
   <Name>TravelAgencySSAS</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <LastUpdate>0001-01-01T06:00:00Z</LastUpdate>
   <DataSourceImpersonationInfo>
     <ImpersonationMode>Default</ImpersonationMode>
     <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
   </DataSourceImpersonationInfo>
   <Dimensions>
-    <Dimension>
-      <ID>Dim Date</ID>
-      <Name>Dim Date</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <Annotations>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
-          <Value>
-            <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3301" scrolltop="-5557" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
-                <font>
-                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
-                </font>
-                <mouseicon>
-                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
-                </mouseicon>
-              </diagram>
-              <layoutmanager>
-                <ddsxmlobj />
-              </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimDate" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3731" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000930e00009b0f0000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_dimDate" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-            </dds>
-          </Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
-          <Value>false</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-3301</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-5557</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>100</Value>
-        </Annotation>
-      </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>Travel Agency DW</DataSourceViewID>
-      </Source>
-      <UnknownMember>Visible</UnknownMember>
-      <ErrorConfiguration>
-        <KeyNotFound>ReportAndStop</KeyNotFound>
-        <KeyDuplicate>ReportAndStop</KeyDuplicate>
-        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
-      </ErrorConfiguration>
-      <CurrentStorageMode>Molap</CurrentStorageMode>
-      <Attributes>
-        <Attribute>
-          <ID>Copy Of Date Id</ID>
-          <Name>Copy Of Date Id</Name>
-          <Usage>Key</Usage>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <NullProcessing>UnknownMember</NullProcessing>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimDate</TableID>
-                <ColumnID>Copy_x0020_of_x0020_dateId</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Date</AttributeID>
-              <Name>Copy Of Date</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Date Year</AttributeID>
-              <Name>Copy Of Date Year</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Date Month</AttributeID>
-              <Name>Copy Of Date Month</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Date Week</AttributeID>
-              <Name>Copy Of Date Week</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Date Day</AttributeID>
-              <Name>Copy Of Date Day</Name>
-            </AttributeRelationship>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Date Quarter</AttributeID>
-              <Name>Copy Of Date Quarter</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
-          <OrderBy>Key</OrderBy>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Date</ID>
-          <Name>Copy Of Date</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>WChar</DataType>
-              <DataSize>50</DataSize>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimDate</TableID>
-                <ColumnID>Copy_x0020_of_x0020_date</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Date Year</ID>
-          <Name>Copy Of Date Year</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimDate</TableID>
-                <ColumnID>Copy_x0020_of_x0020_dateYear</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Date Month</ID>
-          <Name>Copy Of Date Month</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimDate</TableID>
-                <ColumnID>Copy_x0020_of_x0020_dateMonth</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Date Week</ID>
-          <Name>Copy Of Date Week</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimDate</TableID>
-                <ColumnID>Copy_x0020_of_x0020_dateWeek</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Date Day</ID>
-          <Name>Copy Of Date Day</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimDate</TableID>
-                <ColumnID>Copy_x0020_of_x0020_dateDay</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Date Quarter</ID>
-          <Name>Copy Of Date Quarter</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimDate</TableID>
-                <ColumnID>Copy_x0020_of_x0020_dateQuarter</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-      </Attributes>
-      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
-    </Dimension>
-    <Dimension>
-      <ID>Dim Room Types</ID>
-      <Name>Dim Room Types</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <Annotations>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
-          <Value>
-            <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3301" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
-                <font>
-                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
-                </font>
-                <mouseicon>
-                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
-                </mouseicon>
-              </diagram>
-              <layoutmanager>
-                <ddsxmlobj />
-              </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimRoomTypes" left="-59" top="-212" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3731" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000930e000057070000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_dimRoomTypes" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-            </dds>
-          </Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
-          <Value>false</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-3301</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-6615</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>-59</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>-212</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>100</Value>
-        </Annotation>
-      </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>Travel Agency DW</DataSourceViewID>
-      </Source>
-      <UnknownMember>Visible</UnknownMember>
-      <ErrorConfiguration>
-        <KeyNotFound>ReportAndStop</KeyNotFound>
-        <KeyDuplicate>ReportAndStop</KeyDuplicate>
-        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
-      </ErrorConfiguration>
-      <CurrentStorageMode>Molap</CurrentStorageMode>
-      <Attributes>
-        <Attribute>
-          <ID>Copy Of Room Type Id</ID>
-          <Name>Copy Of Room Type Id</Name>
-          <Usage>Key</Usage>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <NullProcessing>UnknownMember</NullProcessing>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimRoomTypes</TableID>
-                <ColumnID>Copy_x0020_of_x0020_roomTypeId</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Room Type</AttributeID>
-              <Name>Copy Of Room Type</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
-          <OrderBy>Key</OrderBy>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Room Type</ID>
-          <Name>Copy Of Room Type</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>WChar</DataType>
-              <DataSize>255</DataSize>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimRoomTypes</TableID>
-                <ColumnID>Copy_x0020_of_x0020_roomType</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-      </Attributes>
-      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
-    </Dimension>
     <Dimension>
       <ID>Dim Customer</ID>
       <Name>Dim Customer</Name>
@@ -364,7 +21,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2441" scrolltop="-5054" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2957" scrolltop="-5054" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -375,9 +32,9 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimCustomer" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5450" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimCustomer" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e00004a15000088130000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e00004311000088130000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -403,7 +60,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-2441</Value>
+          <Value>-2957</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -436,8 +93,8 @@
       <CurrentStorageMode>Molap</CurrentStorageMode>
       <Attributes>
         <Attribute>
-          <ID>Copy Of Cust Id</ID>
-          <Name>Copy Of Cust Id</Name>
+          <ID>Cust Id</ID>
+          <Name>Cust Id</Name>
           <Usage>Key</Usage>
           <KeyColumns>
             <KeyColumn>
@@ -445,50 +102,50 @@
               <NullProcessing>UnknownMember</NullProcessing>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custId</ColumnID>
+                <ColumnID>custId</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Name</AttributeID>
-              <Name>Copy Of Cust Name</Name>
+              <AttributeID>Cust Name</AttributeID>
+              <Name>Cust Name</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Address</AttributeID>
-              <Name>Copy Of Cust Address</Name>
+              <AttributeID>Cust Address</AttributeID>
+              <Name>Cust Address</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust City</AttributeID>
-              <Name>Copy Of Cust City</Name>
+              <AttributeID>Cust City</AttributeID>
+              <Name>Cust City</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust State</AttributeID>
-              <Name>Copy Of Cust State</Name>
+              <AttributeID>Cust State</AttributeID>
+              <Name>Cust State</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Country</AttributeID>
-              <Name>Copy Of Cust Country</Name>
+              <AttributeID>Cust Country</AttributeID>
+              <Name>Cust Country</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Country Code</AttributeID>
-              <Name>Copy Of Cust Country Code</Name>
+              <AttributeID>Cust Country Code</AttributeID>
+              <Name>Cust Country Code</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Age</AttributeID>
-              <Name>Copy Of Cust Age</Name>
+              <AttributeID>Cust Age</AttributeID>
+              <Name>Cust Age</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Gender</AttributeID>
-              <Name>Copy Of Cust Gender</Name>
+              <AttributeID>Cust Gender</AttributeID>
+              <Name>Cust Gender</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Reward Member Level</AttributeID>
-              <Name>Copy Of Cust Reward Member Level</Name>
+              <AttributeID>Cust Reward Member Level</AttributeID>
+              <Name>Cust Reward Member Level</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Cust Account Type</AttributeID>
-              <Name>Copy Of Cust Account Type</Name>
+              <AttributeID>Cust Account Type</AttributeID>
+              <Name>Cust Account Type</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -496,15 +153,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Name</ID>
-          <Name>Copy Of Cust Name</Name>
+          <ID>Cust Name</ID>
+          <Name>Cust Name</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custName</ColumnID>
+                <ColumnID>custName</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -512,15 +169,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Address</ID>
-          <Name>Copy Of Cust Address</Name>
+          <ID>Cust Address</ID>
+          <Name>Cust Address</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custAddress</ColumnID>
+                <ColumnID>custAddress</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -528,15 +185,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust City</ID>
-          <Name>Copy Of Cust City</Name>
+          <ID>Cust City</ID>
+          <Name>Cust City</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custCity</ColumnID>
+                <ColumnID>custCity</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -544,15 +201,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust State</ID>
-          <Name>Copy Of Cust State</Name>
+          <ID>Cust State</ID>
+          <Name>Cust State</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custState</ColumnID>
+                <ColumnID>custState</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -560,15 +217,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Country</ID>
-          <Name>Copy Of Cust Country</Name>
+          <ID>Cust Country</ID>
+          <Name>Cust Country</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custCountry</ColumnID>
+                <ColumnID>custCountry</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -576,15 +233,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Country Code</ID>
-          <Name>Copy Of Cust Country Code</Name>
+          <ID>Cust Country Code</ID>
+          <Name>Cust Country Code</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custCountryCode</ColumnID>
+                <ColumnID>custCountryCode</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -592,14 +249,14 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Age</ID>
-          <Name>Copy Of Cust Age</Name>
+          <ID>Cust Age</ID>
+          <Name>Cust Age</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custAge</ColumnID>
+                <ColumnID>custAge</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -607,15 +264,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Gender</ID>
-          <Name>Copy Of Cust Gender</Name>
+          <ID>Cust Gender</ID>
+          <Name>Cust Gender</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custGender</ColumnID>
+                <ColumnID>custGender</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -623,14 +280,14 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Reward Member Level</ID>
-          <Name>Copy Of Cust Reward Member Level</Name>
+          <ID>Cust Reward Member Level</ID>
+          <Name>Cust Reward Member Level</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custRewardMemberLevel</ColumnID>
+                <ColumnID>custRewardMemberLevel</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -638,15 +295,482 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Cust Account Type</ID>
-          <Name>Copy Of Cust Account Type</Name>
+          <ID>Cust Account Type</ID>
+          <Name>Cust Account Type</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>50</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimCustomer</TableID>
-                <ColumnID>Copy_x0020_of_x0020_custAccountType</ColumnID>
+                <ColumnID>custAccountType</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Booking Method</ID>
+      <Name>Dim Booking Method</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3261" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimBookingMethod" left="-298" top="-212" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000e20e000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dimBookingMethod" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-3261</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6615</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>-298</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>-212</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Travel Agency DW</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Booking Method Id</ID>
+          <Name>Booking Method Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimBookingMethod</TableID>
+                <ColumnID>bookingMethodId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Booking Method Type</AttributeID>
+              <Name>Booking Method Type</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Booking Method Type</ID>
+          <Name>Booking Method Type</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimBookingMethod</TableID>
+                <ColumnID>bookingMethodType</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Room Types</ID>
+      <Name>Dim Room Types</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3666" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimRoomTypes" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dimRoomTypes" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-3666</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-6615</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Travel Agency DW</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Room Type Id</ID>
+          <Name>Room Type Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimRoomTypes</TableID>
+                <ColumnID>roomTypeId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Room Type</AttributeID>
+              <Name>Room Type</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Room Type</ID>
+          <Name>Room Type</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimRoomTypes</TableID>
+                <ColumnID>roomType</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+      </Attributes>
+      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+    </Dimension>
+    <Dimension>
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3666" scrolltop="-5557" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimDate" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dimDate" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-3666</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-5557</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Travel Agency DW</DataSourceViewID>
+      </Source>
+      <UnknownMember>Visible</UnknownMember>
+      <ErrorConfiguration>
+        <KeyNotFound>ReportAndStop</KeyNotFound>
+        <KeyDuplicate>ReportAndStop</KeyDuplicate>
+        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+      </ErrorConfiguration>
+      <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Attributes>
+        <Attribute>
+          <ID>Date Id</ID>
+          <Name>Date Id</Name>
+          <Usage>Key</Usage>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <NullProcessing>UnknownMember</NullProcessing>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimDate</TableID>
+                <ColumnID>dateId</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <AttributeRelationships>
+            <AttributeRelationship>
+              <AttributeID>Date</AttributeID>
+              <Name>Date</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Date Year</AttributeID>
+              <Name>Date Year</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Date Month</AttributeID>
+              <Name>Date Month</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Date Week</AttributeID>
+              <Name>Date Week</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Date Day</AttributeID>
+              <Name>Date Day</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Date Quarter</AttributeID>
+              <Name>Date Quarter</Name>
+            </AttributeRelationship>
+          </AttributeRelationships>
+          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Date</ID>
+          <Name>Date</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimDate</TableID>
+                <ColumnID>date</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Date Year</ID>
+          <Name>Date Year</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimDate</TableID>
+                <ColumnID>dateYear</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Date Month</ID>
+          <Name>Date Month</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimDate</TableID>
+                <ColumnID>dateMonth</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Date Week</ID>
+          <Name>Date Week</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimDate</TableID>
+                <ColumnID>dateWeek</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Date Day</ID>
+          <Name>Date Day</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimDate</TableID>
+                <ColumnID>dateDay</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Date Quarter</ID>
+          <Name>Date Quarter</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_dimDate</TableID>
+                <ColumnID>dateQuarter</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -666,7 +790,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3010" scrolltop="-6192" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3526" scrolltop="-6192" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -677,9 +801,9 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimHotel" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4313" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimHotel" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3281" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000d9100000a50a0000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000d10c0000a50a0000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -705,7 +829,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-3010</Value>
+          <Value>-3526</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -738,8 +862,8 @@
       <CurrentStorageMode>Molap</CurrentStorageMode>
       <Attributes>
         <Attribute>
-          <ID>Copy Of Id</ID>
-          <Name>Copy Of Id</Name>
+          <ID>Id</ID>
+          <Name>Id</Name>
           <Usage>Key</Usage>
           <KeyColumns>
             <KeyColumn>
@@ -747,22 +871,22 @@
               <NullProcessing>UnknownMember</NullProcessing>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimHotel</TableID>
-                <ColumnID>Copy_x0020_of_x0020_id</ColumnID>
+                <ColumnID>id</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Copy Of Hotel Name</AttributeID>
-              <Name>Copy Of Hotel Name</Name>
+              <AttributeID>Hotel Name</AttributeID>
+              <Name>Hotel Name</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Hotel Address</AttributeID>
-              <Name>Copy Of Hotel Address</Name>
+              <AttributeID>Hotel Address</AttributeID>
+              <Name>Hotel Address</Name>
             </AttributeRelationship>
             <AttributeRelationship>
-              <AttributeID>Copy Of Hotel Num Rooms</AttributeID>
-              <Name>Copy Of Hotel Num Rooms</Name>
+              <AttributeID>Hotel Num Rooms</AttributeID>
+              <Name>Hotel Num Rooms</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -770,15 +894,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Hotel Name</ID>
-          <Name>Copy Of Hotel Name</Name>
+          <ID>Hotel Name</ID>
+          <Name>Hotel Name</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimHotel</TableID>
-                <ColumnID>Copy_x0020_of_x0020_hotelName</ColumnID>
+                <ColumnID>hotelName</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -786,15 +910,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Hotel Address</ID>
-          <Name>Copy Of Hotel Address</Name>
+          <ID>Hotel Address</ID>
+          <Name>Hotel Address</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimHotel</TableID>
-                <ColumnID>Copy_x0020_of_x0020_hotelAddress</ColumnID>
+                <ColumnID>hotelAddress</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -802,14 +926,14 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Hotel Num Rooms</ID>
-          <Name>Copy Of Hotel Num Rooms</Name>
+          <ID>Hotel Num Rooms</ID>
+          <Name>Hotel Num Rooms</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>Integer</DataType>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimHotel</TableID>
-                <ColumnID>Copy_x0020_of_x0020_hotelNumRooms</ColumnID>
+                <ColumnID>hotelNumRooms</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -829,7 +953,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3076" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3592" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -840,9 +964,9 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimPaymentTypes" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4180" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimPaymentTypes" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3149" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e00005410000057070000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e00004d0c000057070000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -868,7 +992,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-3076</Value>
+          <Value>-3592</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -901,8 +1025,8 @@
       <CurrentStorageMode>Molap</CurrentStorageMode>
       <Attributes>
         <Attribute>
-          <ID>Copy Of Payment Type Id</ID>
-          <Name>Copy Of Payment Type Id</Name>
+          <ID>Payment Type Id</ID>
+          <Name>Payment Type Id</Name>
           <Usage>Key</Usage>
           <KeyColumns>
             <KeyColumn>
@@ -910,14 +1034,14 @@
               <NullProcessing>UnknownMember</NullProcessing>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimPaymentTypes</TableID>
-                <ColumnID>Copy_x0020_of_x0020_paymentTypeId</ColumnID>
+                <ColumnID>paymentTypeId</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Copy Of Payment Type</AttributeID>
-              <Name>Copy Of Payment Type</Name>
+              <AttributeID>Payment Type</AttributeID>
+              <Name>Payment Type</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -925,139 +1049,15 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Copy Of Payment Type</ID>
-          <Name>Copy Of Payment Type</Name>
+          <ID>Payment Type</ID>
+          <Name>Payment Type</Name>
           <KeyColumns>
             <KeyColumn>
               <DataType>WChar</DataType>
               <DataSize>255</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_dimPaymentTypes</TableID>
-                <ColumnID>Copy_x0020_of_x0020_paymentType</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-      </Attributes>
-      <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
-    </Dimension>
-    <Dimension>
-      <ID>Dim Booking Method</ID>
-      <Name>Dim Booking Method</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <Annotations>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
-          <Value>
-            <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2745" scrolltop="-6615" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
-                <font>
-                  <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
-                </font>
-                <mouseicon>
-                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
-                </mouseicon>
-              </diagram>
-              <layoutmanager>
-                <ddsxmlobj />
-              </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimBookingMethod" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4842" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000ea12000057070000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_dimBookingMethod" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-            </dds>
-          </Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
-          <Value>false</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
-          <Value>true</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-2745</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-6615</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
-        </Annotation>
-        <Annotation>
-          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>100</Value>
-        </Annotation>
-      </Annotations>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
-      <State>Unprocessed</State>
-      <Source xsi:type="DataSourceViewBinding">
-        <DataSourceViewID>Travel Agency DW</DataSourceViewID>
-      </Source>
-      <UnknownMember>Visible</UnknownMember>
-      <ErrorConfiguration>
-        <KeyNotFound>ReportAndStop</KeyNotFound>
-        <KeyDuplicate>ReportAndStop</KeyDuplicate>
-        <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
-      </ErrorConfiguration>
-      <CurrentStorageMode>Molap</CurrentStorageMode>
-      <Attributes>
-        <Attribute>
-          <ID>Copy Of Booking Method Id</ID>
-          <Name>Copy Of Booking Method Id</Name>
-          <Usage>Key</Usage>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>Integer</DataType>
-              <NullProcessing>UnknownMember</NullProcessing>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimBookingMethod</TableID>
-                <ColumnID>Copy_x0020_of_x0020_bookingMethodId</ColumnID>
-              </Source>
-            </KeyColumn>
-          </KeyColumns>
-          <AttributeRelationships>
-            <AttributeRelationship>
-              <AttributeID>Copy Of Booking Method Type</AttributeID>
-              <Name>Copy Of Booking Method Type</Name>
-            </AttributeRelationship>
-          </AttributeRelationships>
-          <OrderBy>Key</OrderBy>
-          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-        </Attribute>
-        <Attribute>
-          <ID>Copy Of Booking Method Type</ID>
-          <Name>Copy Of Booking Method Type</Name>
-          <KeyColumns>
-            <KeyColumn>
-              <DataType>WChar</DataType>
-              <DataSize>255</DataSize>
-              <Source xsi:type="ColumnBinding">
-                <TableID>dbo_dimBookingMethod</TableID>
-                <ColumnID>Copy_x0020_of_x0020_bookingMethodType</ColumnID>
+                <ColumnID>paymentType</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
@@ -1079,7 +1079,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="15" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11571" scrolltop="-1392" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="70" x="29501" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="15" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-11663" scrolltop="23" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="77" x="29501" y="15108" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1090,9 +1090,9 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimDate" left="13578" top="2563" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3731" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimDate" left="11382" top="5684" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000930e00009b0f0000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -1101,9 +1101,9 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimHotel" left="20" top="5337" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4313" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimHotel" left="2530" top="16358" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3281" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000d9100000a50a0000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000d10c0000a50a0000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -1112,53 +1112,9 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimPaymentTypes" left="6865" top="0" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4180" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="factBookings" left="5569" top="7400" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3413" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e00005410000057070000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_dimPaymentTypes" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimBookingMethod" left="13578" top="8958" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="4842" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000ea12000057070000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_dimBookingMethod" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimCustomer" left="9296" top="13237" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="5450" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e00004a15000088130000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_dimCustomer" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimRoomTypes" left="3165" top="13237" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3731" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000930e000057070000" />
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dbo_dimRoomTypes" vartype="8" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="factBookings" left="6733" top="4279" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="4445" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e00005d110000ea120000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000550d0000ea120000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -1167,7 +1123,51 @@
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="10878" top="4711" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2289" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimBookingMethod" left="8211" top="16358" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3810" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000e20e000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dimBookingMethod" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimPaymentTypes" left="20" top="8881" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3149" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00004d0c000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dimPaymentTypes" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimCustomer" left="4563" top="0" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00004311000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dimCustomer" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimRoomTypes" left="11382" top="12079" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_dimRoomTypes" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+              <ddscontrol controlprogid="MSDDS.Polyline" left="8682" top="7832" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2289" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1175,19 +1175,19 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__Copy __7E37BEF6]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__start__540C7B00]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="22" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="13578" y="5110" />
-                  <point x="12378" y="5110" />
-                  <point x="12378" y="6700" />
-                  <point x="11178" y="6700" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="18" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="11382" y="8231" />
+                  <point x="10182" y="8231" />
+                  <point x="10182" y="9821" />
+                  <point x="8982" y="9821" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="10878" top="3061" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="2289" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="8682" top="6182" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="2289" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1195,19 +1195,19 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__Copy __7F2BE32F]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__endDa__55009F39]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="7" sourceattachpoint="16" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="13578" y="3460" />
-                  <point x="12378" y="3460" />
-                  <point x="12378" y="5050" />
-                  <point x="11178" y="5050" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="11382" y="6581" />
+                  <point x="10182" y="6581" />
+                  <point x="10182" y="8171" />
+                  <point x="8982" y="8171" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="4033" top="6300" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="3771" top="11942" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="2704" height="4916" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1215,19 +1215,19 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__Copy __7D439ABD]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__hotel__531856C7]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="7" sourceattachpoint="19" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="4333" y="6699" />
-                  <point x="5533" y="6699" />
-                  <point x="5533" y="6700" />
-                  <point x="6733" y="6700" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="4170" y="16358" />
+                  <point x="4170" y="14300" />
+                  <point x="6175" y="14300" />
+                  <point x="6175" y="12242" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="8556" top="1380" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="6373" top="4501" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="1202" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1235,17 +1235,19 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__Copy __02084FDA]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__custI__55F4C372]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="7" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="8955" y="1879" />
-                  <point x="8955" y="4279" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="6772" y="5000" />
+                  <point x="6772" y="6200" />
+                  <point x="7275" y="6200" />
+                  <point x="7275" y="7400" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="10878" top="8050" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="2247" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="7525" top="11942" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="2991" height="4916" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1253,19 +1255,19 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__Copy __01142BA1]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__booki__56E8E7AB]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="7" sourceattachpoint="20" destattachpoint="29" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="13578" y="9897" />
-                  <point x="12378" y="9897" />
-                  <point x="12378" y="8350" />
-                  <point x="11178" y="8350" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="10116" y="16358" />
+                  <point x="10116" y="14300" />
+                  <point x="7825" y="14300" />
+                  <point x="7825" y="12242" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="9205" top="8821" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="3216" height="4916" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="8682" top="11171" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="2247" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1273,19 +1275,19 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__Copy __00200768]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__roomT__58D1301D]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="7" sourceattachpoint="8" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="12021" y="13237" />
-                  <point x="12021" y="11179" />
-                  <point x="9505" y="11179" />
-                  <point x="9505" y="9121" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="3" sourceattachpoint="12" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="11382" y="13018" />
+                  <point x="10182" y="13018" />
+                  <point x="10182" y="11471" />
+                  <point x="8982" y="11471" />
                 </connector>
               </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="4631" top="8821" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3524" height="4916" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="MSDDS.Polyline" left="2869" top="9421" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobj>
                     <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -1293,16 +1295,16 @@
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__Copy __02FC7413]" vartype="8" />
+                    <property name="LogicalObject" value="dataSet.Relations[FK__factBooki__payme__57DD0BE4]" vartype="8" />
                     <property name="Virtual" value="0" vartype="11" />
                     <property name="VisibleAP" value="0" vartype="3" />
                   </ddsxmlobj>
                 </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="7" sourceattachpoint="6" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="5030" y="13237" />
-                  <point x="5030" y="11179" />
-                  <point x="7855" y="11179" />
-                  <point x="7855" y="9121" />
+                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="13" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                  <point x="3169" y="9820" />
+                  <point x="4369" y="9820" />
+                  <point x="4369" y="9821" />
+                  <point x="5569" y="9821" />
                 </connector>
               </ddscontrol>
             </dds>
@@ -1322,11 +1324,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>-11571</Value>
+          <Value>-11663</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-1392</Value>
+          <Value>23</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -1338,131 +1340,49 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-          <Value>70</Value>
+          <Value>77</Value>
         </Annotation>
       </Annotations>
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Dimensions>
         <Dimension>
-          <ID>Copy Of Start Date</ID>
-          <Name>Copy Of Start Date</Name>
-          <DimensionID>Dim Date</DimensionID>
-          <Attributes>
-            <Attribute>
-              <AttributeID>Copy Of Date Id</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Year</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Month</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Week</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Day</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Quarter</AttributeID>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension>
-          <ID>Copy Of End Date</ID>
-          <Name>Copy Of End Date</Name>
-          <DimensionID>Dim Date</DimensionID>
-          <Attributes>
-            <Attribute>
-              <AttributeID>Copy Of Date Id</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Year</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Month</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Week</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Day</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Date Quarter</AttributeID>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension>
-          <ID>Dim Room Types</ID>
-          <Name>Dim Room Types</Name>
-          <DimensionID>Dim Room Types</DimensionID>
-          <Attributes>
-            <Attribute>
-              <AttributeID>Copy Of Room Type Id</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Room Type</AttributeID>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension>
           <ID>Dim Customer</ID>
           <Name>Dim Customer</Name>
           <DimensionID>Dim Customer</DimensionID>
           <Attributes>
             <Attribute>
-              <AttributeID>Copy Of Cust Id</AttributeID>
+              <AttributeID>Cust Id</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Name</AttributeID>
+              <AttributeID>Cust Name</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Address</AttributeID>
+              <AttributeID>Cust Address</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust City</AttributeID>
+              <AttributeID>Cust City</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust State</AttributeID>
+              <AttributeID>Cust State</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Country</AttributeID>
+              <AttributeID>Cust Country</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Country Code</AttributeID>
+              <AttributeID>Cust Country Code</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Age</AttributeID>
+              <AttributeID>Cust Age</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Gender</AttributeID>
+              <AttributeID>Cust Gender</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Reward Member Level</AttributeID>
+              <AttributeID>Cust Reward Member Level</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Cust Account Type</AttributeID>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension>
-          <ID>Dim Payment Types</ID>
-          <Name>Dim Payment Types</Name>
-          <DimensionID>Dim Payment Types</DimensionID>
-          <Attributes>
-            <Attribute>
-              <AttributeID>Copy Of Payment Type Id</AttributeID>
-            </Attribute>
-            <Attribute>
-              <AttributeID>Copy Of Payment Type</AttributeID>
+              <AttributeID>Cust Account Type</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -1472,10 +1392,92 @@
           <DimensionID>Dim Booking Method</DimensionID>
           <Attributes>
             <Attribute>
-              <AttributeID>Copy Of Booking Method Id</AttributeID>
+              <AttributeID>Booking Method Id</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Booking Method Type</AttributeID>
+              <AttributeID>Booking Method Type</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Room Types</ID>
+          <Name>Dim Room Types</Name>
+          <DimensionID>Dim Room Types</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Room Type Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Room Type</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Start Date</ID>
+          <Name>Start Date</Name>
+          <DimensionID>Dim Date</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Month</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Week</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Day</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Quarter</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>Dim Payment Types</ID>
+          <Name>Dim Payment Types</Name>
+          <DimensionID>Dim Payment Types</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Payment Type Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Payment Type</AttributeID>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension>
+          <ID>End Date</ID>
+          <Name>End Date</Name>
+          <DimensionID>Dim Date</DimensionID>
+          <Attributes>
+            <Attribute>
+              <AttributeID>Date Id</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Year</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Month</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Week</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Day</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Date Quarter</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -1485,16 +1487,16 @@
           <DimensionID>Dim Hotel</DimensionID>
           <Attributes>
             <Attribute>
-              <AttributeID>Copy Of Id</AttributeID>
+              <AttributeID>Id</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Hotel Name</AttributeID>
+              <AttributeID>Hotel Name</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Hotel Address</AttributeID>
+              <AttributeID>Hotel Address</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Copy Of Hotel Num Rooms</AttributeID>
+              <AttributeID>Hotel Num Rooms</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -1509,13 +1511,25 @@
           <State>Unprocessed</State>
           <Measures>
             <Measure>
-              <ID>Copy Of Cost</ID>
-              <Name>Copy Of Cost</Name>
+              <ID>Cost</ID>
+              <Name>Cost</Name>
               <Source>
                 <DataType>Integer</DataType>
                 <Source xsi:type="ColumnBinding">
                   <TableID>dbo_factBookings</TableID>
-                  <ColumnID>Copy_x0020_of_x0020_cost</ColumnID>
+                  <ColumnID>cost</ColumnID>
+                </Source>
+              </Source>
+            </Measure>
+            <Measure>
+              <ID>Fact Bookings Count</ID>
+              <Name>Fact Bookings Count</Name>
+              <AggregateFunction>Count</AggregateFunction>
+              <Source>
+                <DataType>Integer</DataType>
+                <DataSize>4</DataSize>
+                <Source xsi:type="RowBinding">
+                  <TableID>dbo_factBookings</TableID>
                 </Source>
               </Source>
             </Measure>
@@ -1524,112 +1538,17 @@
           <ProcessingMode>Regular</ProcessingMode>
           <Dimensions>
             <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Copy Of Start Date</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Copy Of Date Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_factBookings</TableID>
-                        <ColumnID>Copy_x0020_of_x0020_startDateId</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Copy Of End Date</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Copy Of Date Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_factBookings</TableID>
-                        <ColumnID>Copy_x0020_of_x0020_endDateId</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Dim Room Types</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Copy Of Room Type Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_factBookings</TableID>
-                        <ColumnID>Copy_x0020_of_x0020_roomTypeId</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
               <CubeDimensionID>Dim Customer</CubeDimensionID>
               <Attributes>
                 <Attribute>
-                  <AttributeID>Copy Of Cust Id</AttributeID>
+                  <AttributeID>Cust Id</AttributeID>
                   <KeyColumns>
                     <KeyColumn>
                       <DataType>Integer</DataType>
                       <NullProcessing>UnknownMember</NullProcessing>
                       <Source xsi:type="ColumnBinding">
                         <TableID>dbo_factBookings</TableID>
-                        <ColumnID>Copy_x0020_of_x0020_custId</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Dim Hotel</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Copy Of Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_factBookings</TableID>
-                        <ColumnID>Copy_x0020_of_x0020_hotelId</ColumnID>
-                      </Source>
-                    </KeyColumn>
-                  </KeyColumns>
-                  <Type>Granularity</Type>
-                </Attribute>
-              </Attributes>
-            </Dimension>
-            <Dimension xsi:type="RegularMeasureGroupDimension">
-              <CubeDimensionID>Dim Payment Types</CubeDimensionID>
-              <Attributes>
-                <Attribute>
-                  <AttributeID>Copy Of Payment Type Id</AttributeID>
-                  <KeyColumns>
-                    <KeyColumn>
-                      <DataType>Integer</DataType>
-                      <NullProcessing>UnknownMember</NullProcessing>
-                      <Source xsi:type="ColumnBinding">
-                        <TableID>dbo_factBookings</TableID>
-                        <ColumnID>Copy_x0020_of_x0020_paymentTypeId</ColumnID>
+                        <ColumnID>custId</ColumnID>
                       </Source>
                     </KeyColumn>
                   </KeyColumns>
@@ -1641,14 +1560,109 @@
               <CubeDimensionID>Dim Booking Method</CubeDimensionID>
               <Attributes>
                 <Attribute>
-                  <AttributeID>Copy Of Booking Method Id</AttributeID>
+                  <AttributeID>Booking Method Id</AttributeID>
                   <KeyColumns>
                     <KeyColumn>
                       <DataType>Integer</DataType>
                       <NullProcessing>UnknownMember</NullProcessing>
                       <Source xsi:type="ColumnBinding">
                         <TableID>dbo_factBookings</TableID>
-                        <ColumnID>Copy_x0020_of_x0020_bookingMethodId</ColumnID>
+                        <ColumnID>bookingMethodId</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Room Types</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Room Type Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_factBookings</TableID>
+                        <ColumnID>roomTypeId</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Start Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_factBookings</TableID>
+                        <ColumnID>startDateId</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Hotel</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_factBookings</TableID>
+                        <ColumnID>hotelId</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>Dim Payment Types</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Payment Type Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_factBookings</TableID>
+                        <ColumnID>paymentTypeId</ColumnID>
+                      </Source>
+                    </KeyColumn>
+                  </KeyColumns>
+                  <Type>Granularity</Type>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension xsi:type="RegularMeasureGroupDimension">
+              <CubeDimensionID>End Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Id</AttributeID>
+                  <KeyColumns>
+                    <KeyColumn>
+                      <DataType>Integer</DataType>
+                      <NullProcessing>UnknownMember</NullProcessing>
+                      <Source xsi:type="ColumnBinding">
+                        <TableID>dbo_factBookings</TableID>
+                        <ColumnID>endDateId</ColumnID>
                       </Source>
                     </KeyColumn>
                   </KeyColumns>
@@ -1742,62 +1756,48 @@
       <DataSourceID>Travel Agency DW</DataSourceID>
       <Schema>
         <xs:schema id="Travel_x0020_Agency_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-          <xs:element name="Travel_x0020_Agency_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="9663debe-4e0e-4a18-82e8-caf1a9bf9d86">
+          <xs:element name="Travel_x0020_Agency_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ee6dc820-a852-4d07-93bf-254a0730d384">
             <xs:complexType>
               <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="dbo_factBookings" msprop:design-time-name="23059a40-26e9-45c8-9e55-5686e8622212" msprop:FriendlyName="factBookings" msprop:DbSchemaName="dbo" msprop:DbTableName="factBookings" msprop:TableType="Table">
+                <xs:element name="dbo_factBookings" msprop:design-time-name="5f19c8ec-67da-4729-8c8e-c84395242fa7" msprop:FriendlyName="factBookings" msprop:DbSchemaName="dbo" msprop:DbTableName="factBookings" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Copy_x0020_of_x0020_factBookingId" msprop:design-time-name="67c3ddf2-e04c-4809-af51-d057c1564b48" msprop:DbColumnName="Copy of factBookingId" msprop:FriendlyName="Copy of factBookingId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_hotelId" msprop:design-time-name="29edfc6e-6681-4914-921a-762cf2b9da79" msprop:DbColumnName="Copy of hotelId" msprop:FriendlyName="Copy of hotelId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_startDateId" msprop:design-time-name="3e05a26c-b32b-4717-84dc-3c163ec0d8a0" msprop:DbColumnName="Copy of startDateId" msprop:FriendlyName="Copy of startDateId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_endDateId" msprop:design-time-name="4990c75b-7dd6-4d0d-b073-3323cb4e2237" msprop:DbColumnName="Copy of endDateId" msprop:FriendlyName="Copy of endDateId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_custId" msprop:design-time-name="b21070df-0d0b-4da2-b6a0-87cebf629e0a" msprop:DbColumnName="Copy of custId" msprop:FriendlyName="Copy of custId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_bookingMethodId" msprop:design-time-name="b6e2a09e-bbc5-4a6a-acec-437765a9b8af" msprop:DbColumnName="Copy of bookingMethodId" msprop:FriendlyName="Copy of bookingMethodId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_paymentTypeId" msprop:design-time-name="0da73c9e-5a3c-4d11-a6c8-248c252863cd" msprop:DbColumnName="Copy of paymentTypeId" msprop:FriendlyName="Copy of paymentTypeId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_roomTypeId" msprop:design-time-name="88f81b2e-144f-43bc-8c7b-11b6685d45fd" msprop:DbColumnName="Copy of roomTypeId" msprop:FriendlyName="Copy of roomTypeId" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_cost" msprop:design-time-name="5a0d1c0c-18f2-4615-879a-054f093b8c0b" msprop:DbColumnName="Copy of cost" msprop:FriendlyName="Copy of cost" type="xs:int" minOccurs="0" />
+                      <xs:element name="factBookingId" msprop:design-time-name="5e0b1bdd-0f5c-4db2-9ef0-94e27eb8b01d" msprop:DbColumnName="factBookingId" msprop:FriendlyName="factBookingId" type="xs:int" minOccurs="0" />
+                      <xs:element name="hotelId" msprop:design-time-name="961b3f32-2fc1-449f-a1ca-73669730da4e" msprop:DbColumnName="hotelId" msprop:FriendlyName="hotelId" type="xs:int" minOccurs="0" />
+                      <xs:element name="startDateId" msprop:design-time-name="37fec085-234b-48d5-9c90-5ed2843f3486" msprop:DbColumnName="startDateId" msprop:FriendlyName="startDateId" type="xs:int" minOccurs="0" />
+                      <xs:element name="endDateId" msprop:design-time-name="add504fe-765f-49ed-bf0d-6433323630e5" msprop:DbColumnName="endDateId" msprop:FriendlyName="endDateId" type="xs:int" minOccurs="0" />
+                      <xs:element name="custId" msprop:design-time-name="f5a1b644-7985-4420-8b55-3f5b782c6bc8" msprop:DbColumnName="custId" msprop:FriendlyName="custId" type="xs:int" minOccurs="0" />
+                      <xs:element name="bookingMethodId" msprop:design-time-name="58f86efb-06a0-402d-bc6f-af2682b978d7" msprop:DbColumnName="bookingMethodId" msprop:FriendlyName="bookingMethodId" type="xs:int" minOccurs="0" />
+                      <xs:element name="paymentTypeId" msprop:design-time-name="2e98ec55-eaf6-4946-b750-adfb22d8e1bc" msprop:DbColumnName="paymentTypeId" msprop:FriendlyName="paymentTypeId" type="xs:int" minOccurs="0" />
+                      <xs:element name="roomTypeId" msprop:design-time-name="cd2e28e4-5805-4fff-a56f-5ef309ae14fd" msprop:DbColumnName="roomTypeId" msprop:FriendlyName="roomTypeId" type="xs:int" minOccurs="0" />
+                      <xs:element name="cost" msprop:design-time-name="22b873f5-56ba-48d3-a014-0bf5ff53da22" msprop:DbColumnName="cost" msprop:FriendlyName="cost" type="xs:int" minOccurs="0" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_dimDate" msprop:design-time-name="291d5a30-5732-4309-9924-38332c020f1b" msprop:FriendlyName="dimDate" msprop:DbSchemaName="dbo" msprop:DbTableName="dimDate" msprop:TableType="Table">
+                <xs:element name="dbo_dimDate" msprop:design-time-name="7be3a1ae-1284-48be-968d-aba0afd5ee0e" msprop:FriendlyName="dimDate" msprop:DbSchemaName="dbo" msprop:DbTableName="dimDate" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Copy_x0020_of_x0020_dateId" msprop:design-time-name="6f7b97a3-0db5-4906-a198-614270c178f1" msprop:DbColumnName="Copy of dateId" msprop:FriendlyName="Copy of dateId" type="xs:int" />
-                      <xs:element name="Copy_x0020_of_x0020_date" msprop:design-time-name="bfc766b4-5979-4230-bc4a-786fa3aca16b" msprop:DbColumnName="Copy of date" msprop:FriendlyName="Copy of date" minOccurs="0">
+                      <xs:element name="dateId" msprop:design-time-name="bdbe0a94-37d6-42d5-aa1c-8fcaee29d813" msprop:DbColumnName="dateId" msprop:FriendlyName="dateId" type="xs:int" />
+                      <xs:element name="date" msprop:design-time-name="4ff25e00-8fa9-45eb-b2e3-1ac5e6d94043" msprop:DbColumnName="date" msprop:FriendlyName="date" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="50" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_dateYear" msprop:design-time-name="ae6914f4-517e-4c30-b480-b649ca961719" msprop:DbColumnName="Copy of dateYear" msprop:FriendlyName="Copy of dateYear" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_dateMonth" msprop:design-time-name="534fab96-349c-4c3e-8b08-613a97a87e6b" msprop:DbColumnName="Copy of dateMonth" msprop:FriendlyName="Copy of dateMonth" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_dateWeek" msprop:design-time-name="56d0b863-cb55-465b-9a48-35e7d08376d7" msprop:DbColumnName="Copy of dateWeek" msprop:FriendlyName="Copy of dateWeek" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_dateDay" msprop:design-time-name="27f28230-147f-4021-963a-a3325915ec58" msprop:DbColumnName="Copy of dateDay" msprop:FriendlyName="Copy of dateDay" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_dateQuarter" msprop:design-time-name="4f4a6b97-7dc8-495f-85e2-b62bb5c69e61" msprop:DbColumnName="Copy of dateQuarter" msprop:FriendlyName="Copy of dateQuarter" type="xs:int" minOccurs="0" />
+                      <xs:element name="dateYear" msprop:design-time-name="cab44fc7-2018-4464-8551-837ba898c35e" msprop:DbColumnName="dateYear" msprop:FriendlyName="dateYear" type="xs:int" minOccurs="0" />
+                      <xs:element name="dateMonth" msprop:design-time-name="55b8cf4f-acef-4c6a-83a6-4b85119f8c60" msprop:DbColumnName="dateMonth" msprop:FriendlyName="dateMonth" type="xs:int" minOccurs="0" />
+                      <xs:element name="dateWeek" msprop:design-time-name="e24f02d8-f0bc-48b6-b2f8-e0a69a23c6b3" msprop:DbColumnName="dateWeek" msprop:FriendlyName="dateWeek" type="xs:int" minOccurs="0" />
+                      <xs:element name="dateDay" msprop:design-time-name="c1046c01-fef9-458b-8a32-40b80e75f493" msprop:DbColumnName="dateDay" msprop:FriendlyName="dateDay" type="xs:int" minOccurs="0" />
+                      <xs:element name="dateQuarter" msprop:design-time-name="d999f389-96e1-48cb-9c83-6645b8dc55f9" msprop:DbColumnName="dateQuarter" msprop:FriendlyName="dateQuarter" type="xs:int" minOccurs="0" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_dimPaymentTypes" msprop:design-time-name="8358e94b-386b-4cbc-96cd-fe6b844bbaad" msprop:FriendlyName="dimPaymentTypes" msprop:DbSchemaName="dbo" msprop:DbTableName="dimPaymentTypes" msprop:TableType="Table">
+                <xs:element name="dbo_dimPaymentTypes" msprop:design-time-name="b4828d85-617d-4f89-9145-37b351a4da3a" msprop:FriendlyName="dimPaymentTypes" msprop:DbSchemaName="dbo" msprop:DbTableName="dimPaymentTypes" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Copy_x0020_of_x0020_paymentTypeId" msprop:design-time-name="04e078c3-d7f4-4b48-8860-2e582bce2bbd" msprop:DbColumnName="Copy of paymentTypeId" msprop:FriendlyName="Copy of paymentTypeId" type="xs:int" />
-                      <xs:element name="Copy_x0020_of_x0020_paymentType" msprop:design-time-name="d815150b-3786-4c44-9dd5-7b5451bea39c" msprop:DbColumnName="Copy of paymentType" msprop:FriendlyName="Copy of paymentType" minOccurs="0">
-                        <xs:simpleType>
-                          <xs:restriction base="xs:string">
-                            <xs:maxLength value="255" />
-                          </xs:restriction>
-                        </xs:simpleType>
-                      </xs:element>
-                    </xs:sequence>
-                  </xs:complexType>
-                </xs:element>
-                <xs:element name="dbo_dimBookingMethod" msprop:design-time-name="570c96c6-bc30-4c7b-95b6-f8be24d3f284" msprop:FriendlyName="dimBookingMethod" msprop:DbSchemaName="dbo" msprop:DbTableName="dimBookingMethod" msprop:TableType="Table">
-                  <xs:complexType>
-                    <xs:sequence>
-                      <xs:element name="Copy_x0020_of_x0020_bookingMethodId" msprop:design-time-name="cbc120bc-8750-457f-8fe1-27f1e8fc0fd7" msprop:DbColumnName="Copy of bookingMethodId" msprop:FriendlyName="Copy of bookingMethodId" type="xs:int" />
-                      <xs:element name="Copy_x0020_of_x0020_bookingMethodType" msprop:design-time-name="a68cc05b-acf3-41a9-ba0d-3d3d11a4494d" msprop:DbColumnName="Copy of bookingMethodType" msprop:FriendlyName="Copy of bookingMethodType" minOccurs="0">
+                      <xs:element name="paymentTypeId" msprop:design-time-name="a1e8b9e2-d88b-4bf3-b8a2-725810bcddd6" msprop:DbColumnName="paymentTypeId" msprop:FriendlyName="paymentTypeId" type="xs:int" />
+                      <xs:element name="paymentType" msprop:design-time-name="9b2c3a7f-4e50-423f-b14e-c9c7fabd8344" msprop:DbColumnName="paymentType" msprop:FriendlyName="paymentType" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
@@ -1807,84 +1807,98 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_dimHotel" msprop:design-time-name="2b5e0e84-ce5b-4b1d-bc57-8d5a96378930" msprop:FriendlyName="dimHotel" msprop:DbSchemaName="dbo" msprop:DbTableName="dimHotel" msprop:TableType="Table">
+                <xs:element name="dbo_dimBookingMethod" msprop:design-time-name="02da1c83-dfb1-472d-985d-9bd88cb2d548" msprop:FriendlyName="dimBookingMethod" msprop:DbSchemaName="dbo" msprop:DbTableName="dimBookingMethod" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Copy_x0020_of_x0020_id" msprop:design-time-name="178cb46b-1b0d-4af0-9af0-e097d8a485ce" msprop:DbColumnName="Copy of id" msprop:FriendlyName="Copy of id" type="xs:int" />
-                      <xs:element name="Copy_x0020_of_x0020_hotelName" msprop:design-time-name="46b32c91-d5f2-4f5f-90e2-e8bf21e8ff9f" msprop:DbColumnName="Copy of hotelName" msprop:FriendlyName="Copy of hotelName" minOccurs="0">
+                      <xs:element name="bookingMethodId" msprop:design-time-name="5a1594b8-28ea-4ac4-bac9-216ef9e671de" msprop:DbColumnName="bookingMethodId" msprop:FriendlyName="bookingMethodId" type="xs:int" />
+                      <xs:element name="bookingMethodType" msprop:design-time-name="3a820a6b-2fdf-45bc-9776-594a1099b599" msprop:DbColumnName="bookingMethodType" msprop:FriendlyName="bookingMethodType" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_hotelAddress" msprop:design-time-name="5f6b0f5d-f67a-48c0-ad84-a0868e15847b" msprop:DbColumnName="Copy of hotelAddress" msprop:FriendlyName="Copy of hotelAddress" minOccurs="0">
-                        <xs:simpleType>
-                          <xs:restriction base="xs:string">
-                            <xs:maxLength value="255" />
-                          </xs:restriction>
-                        </xs:simpleType>
-                      </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_hotelNumRooms" msprop:design-time-name="05f5d86a-aa12-425b-bb11-35ec391810fb" msprop:DbColumnName="Copy of hotelNumRooms" msprop:FriendlyName="Copy of hotelNumRooms" type="xs:int" minOccurs="0" />
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_dimCustomer" msprop:design-time-name="52cb22a3-e53f-4079-b283-6488ef7528a9" msprop:FriendlyName="dimCustomer" msprop:DbSchemaName="dbo" msprop:DbTableName="dimCustomer" msprop:TableType="Table">
+                <xs:element name="dbo_dimHotel" msprop:design-time-name="b8117a75-35df-4a27-8c46-71b3543ee55f" msprop:FriendlyName="dimHotel" msprop:DbSchemaName="dbo" msprop:DbTableName="dimHotel" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Copy_x0020_of_x0020_custId" msprop:design-time-name="20d818e0-cb2c-42c6-950e-24d87475a500" msprop:DbColumnName="Copy of custId" msprop:FriendlyName="Copy of custId" type="xs:int" />
-                      <xs:element name="Copy_x0020_of_x0020_custName" msprop:design-time-name="3558e7f4-0471-44df-88a1-ff7dc5c42e35" msprop:DbColumnName="Copy of custName" msprop:FriendlyName="Copy of custName" minOccurs="0">
+                      <xs:element name="id" msprop:design-time-name="fee27e47-d698-46f4-b08a-4239312025a8" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                      <xs:element name="hotelName" msprop:design-time-name="6f58a1e0-a485-4043-a8ff-7a781cf3dafb" msprop:DbColumnName="hotelName" msprop:FriendlyName="hotelName" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_custAddress" msprop:design-time-name="03675f0c-9a1b-46af-be98-0c340d588dc7" msprop:DbColumnName="Copy of custAddress" msprop:FriendlyName="Copy of custAddress" minOccurs="0">
+                      <xs:element name="hotelAddress" msprop:design-time-name="606b361c-4b6e-4416-9619-e9db4cbd23c9" msprop:DbColumnName="hotelAddress" msprop:FriendlyName="hotelAddress" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_custCity" msprop:design-time-name="ec0d850e-7e8d-4552-b5f9-2eed6a5bf4ec" msprop:DbColumnName="Copy of custCity" msprop:FriendlyName="Copy of custCity" minOccurs="0">
+                      <xs:element name="hotelNumRooms" msprop:design-time-name="3b26bc08-7ab1-4a19-98a1-d28a799d4168" msprop:DbColumnName="hotelNumRooms" msprop:FriendlyName="hotelNumRooms" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="dbo_dimCustomer" msprop:design-time-name="0ccbf22d-0e4e-41bf-b585-cdf694df06da" msprop:FriendlyName="dimCustomer" msprop:DbSchemaName="dbo" msprop:DbTableName="dimCustomer" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="custId" msprop:design-time-name="ecf900e9-22ee-4c4a-897e-8cdcafbec843" msprop:DbColumnName="custId" msprop:FriendlyName="custId" type="xs:int" />
+                      <xs:element name="custName" msprop:design-time-name="1e94be2d-340d-4eb5-b1e9-3887713c8d5d" msprop:DbColumnName="custName" msprop:FriendlyName="custName" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_custState" msprop:design-time-name="dd08d721-68cf-4448-ad29-7a898591444b" msprop:DbColumnName="Copy of custState" msprop:FriendlyName="Copy of custState" minOccurs="0">
+                      <xs:element name="custAddress" msprop:design-time-name="36be9cf4-c8e7-47a6-bb1e-aabfb0c77514" msprop:DbColumnName="custAddress" msprop:FriendlyName="custAddress" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_custCountry" msprop:design-time-name="97c9d5bd-3e71-4ba5-8b8f-0dd625699624" msprop:DbColumnName="Copy of custCountry" msprop:FriendlyName="Copy of custCountry" minOccurs="0">
+                      <xs:element name="custCity" msprop:design-time-name="12939b33-709a-4b6d-b529-a6943678d4d3" msprop:DbColumnName="custCity" msprop:FriendlyName="custCity" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_custCountryCode" msprop:design-time-name="eba7dbed-11fe-4aaa-bdbf-89779aa651ad" msprop:DbColumnName="Copy of custCountryCode" msprop:FriendlyName="Copy of custCountryCode" minOccurs="0">
+                      <xs:element name="custState" msprop:design-time-name="39a43566-db4e-486a-9662-833582c3e08e" msprop:DbColumnName="custState" msprop:FriendlyName="custState" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_custAge" msprop:design-time-name="b9c3681e-c262-4ef8-a637-89d28c838b64" msprop:DbColumnName="Copy of custAge" msprop:FriendlyName="Copy of custAge" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_custGender" msprop:design-time-name="e1000bc8-8095-4d36-9f3a-8bf98572a868" msprop:DbColumnName="Copy of custGender" msprop:FriendlyName="Copy of custGender" minOccurs="0">
+                      <xs:element name="custCountry" msprop:design-time-name="4350a17e-9fef-4a7f-83ad-5983ee38185f" msprop:DbColumnName="custCountry" msprop:FriendlyName="custCountry" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
-                      <xs:element name="Copy_x0020_of_x0020_custRewardMemberLevel" msprop:design-time-name="1e2306b0-c370-499a-9fc8-c2ee4c4cf4de" msprop:DbColumnName="Copy of custRewardMemberLevel" msprop:FriendlyName="Copy of custRewardMemberLevel" type="xs:int" minOccurs="0" />
-                      <xs:element name="Copy_x0020_of_x0020_custAccountType" msprop:design-time-name="6b921b6a-b192-4ffc-8010-f543392b762c" msprop:DbColumnName="Copy of custAccountType" msprop:FriendlyName="Copy of custAccountType" minOccurs="0">
+                      <xs:element name="custCountryCode" msprop:design-time-name="4006b930-b177-4425-aaea-79bc425b774a" msprop:DbColumnName="custCountryCode" msprop:FriendlyName="custCountryCode" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="custAge" msprop:design-time-name="82d72427-13ea-4089-9a8b-0a9dd5967155" msprop:DbColumnName="custAge" msprop:FriendlyName="custAge" type="xs:int" minOccurs="0" />
+                      <xs:element name="custGender" msprop:design-time-name="226344d7-dee6-4760-9d73-6faf877cbcc7" msprop:DbColumnName="custGender" msprop:FriendlyName="custGender" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="255" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="custRewardMemberLevel" msprop:design-time-name="696f4f96-5403-4bb0-9507-79a5e7298b1c" msprop:DbColumnName="custRewardMemberLevel" msprop:FriendlyName="custRewardMemberLevel" type="xs:int" minOccurs="0" />
+                      <xs:element name="custAccountType" msprop:design-time-name="d14bc195-a024-4c78-a44c-d6c19049453a" msprop:DbColumnName="custAccountType" msprop:FriendlyName="custAccountType" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="50" />
@@ -1894,11 +1908,11 @@
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
-                <xs:element name="dbo_dimRoomTypes" msprop:design-time-name="840c53e5-32db-4bea-ac10-0d2f1629fea9" msprop:FriendlyName="dimRoomTypes" msprop:DbSchemaName="dbo" msprop:DbTableName="dimRoomTypes" msprop:TableType="Table">
+                <xs:element name="dbo_dimRoomTypes" msprop:design-time-name="a8f6245e-14d4-463f-8fbe-35effb7ba544" msprop:FriendlyName="dimRoomTypes" msprop:DbSchemaName="dbo" msprop:DbTableName="dimRoomTypes" msprop:TableType="Table">
                   <xs:complexType>
                     <xs:sequence>
-                      <xs:element name="Copy_x0020_of_x0020_roomTypeId" msprop:design-time-name="0d8a1ffe-2086-48bf-9845-9a6ed82d2b64" msprop:DbColumnName="Copy of roomTypeId" msprop:FriendlyName="Copy of roomTypeId" type="xs:int" />
-                      <xs:element name="Copy_x0020_of_x0020_roomType" msprop:design-time-name="39163ed6-033d-4d52-8b37-9dc51620acad" msprop:DbColumnName="Copy of roomType" msprop:FriendlyName="Copy of roomType" minOccurs="0">
+                      <xs:element name="roomTypeId" msprop:design-time-name="51d920a0-21d2-4d70-97c3-f2eb81849133" msprop:DbColumnName="roomTypeId" msprop:FriendlyName="roomTypeId" type="xs:int" />
+                      <xs:element name="roomType" msprop:design-time-name="3a7db51f-bde0-4df6-81f0-58720a8b60d2" msprop:DbColumnName="roomType" msprop:FriendlyName="roomType" minOccurs="0">
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="255" />
@@ -1912,55 +1926,55 @@
             </xs:complexType>
             <xs:unique name="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//dbo_dimDate" />
-              <xs:field xpath="Copy_x0020_of_x0020_dateId" />
+              <xs:field xpath="dateId" />
             </xs:unique>
             <xs:unique name="dbo_dimPaymentTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//dbo_dimPaymentTypes" />
-              <xs:field xpath="Copy_x0020_of_x0020_paymentTypeId" />
+              <xs:field xpath="paymentTypeId" />
             </xs:unique>
             <xs:unique name="dbo_dimBookingMethod_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//dbo_dimBookingMethod" />
-              <xs:field xpath="Copy_x0020_of_x0020_bookingMethodId" />
+              <xs:field xpath="bookingMethodId" />
             </xs:unique>
             <xs:unique name="dbo_dimHotel_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//dbo_dimHotel" />
-              <xs:field xpath="Copy_x0020_of_x0020_id" />
+              <xs:field xpath="id" />
             </xs:unique>
             <xs:unique name="dbo_dimCustomer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//dbo_dimCustomer" />
-              <xs:field xpath="Copy_x0020_of_x0020_custId" />
+              <xs:field xpath="custId" />
             </xs:unique>
             <xs:unique name="dbo_dimRoomTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
               <xs:selector xpath=".//dbo_dimRoomTypes" />
-              <xs:field xpath="Copy_x0020_of_x0020_roomTypeId" />
+              <xs:field xpath="roomTypeId" />
             </xs:unique>
-            <xs:keyref name="FK__factBooki__Copy_x0020___01142BA1" refer="dbo_dimBookingMethod_Constraint1">
+            <xs:keyref name="FK__factBooki__endDa__55009F39" refer="Constraint1">
               <xs:selector xpath=".//dbo_factBookings" />
-              <xs:field xpath="Copy_x0020_of_x0020_bookingMethodId" />
+              <xs:field xpath="endDateId" />
             </xs:keyref>
-            <xs:keyref name="FK__factBooki__Copy_x0020___02084FDA" refer="dbo_dimPaymentTypes_Constraint1">
+            <xs:keyref name="FK__factBooki__payme__57DD0BE4" refer="dbo_dimPaymentTypes_Constraint1">
               <xs:selector xpath=".//dbo_factBookings" />
-              <xs:field xpath="Copy_x0020_of_x0020_paymentTypeId" />
+              <xs:field xpath="paymentTypeId" />
             </xs:keyref>
-            <xs:keyref name="FK__factBooki__Copy_x0020___7D439ABD" refer="dbo_dimHotel_Constraint1">
+            <xs:keyref name="FK__factBooki__hotel__531856C7" refer="dbo_dimHotel_Constraint1">
               <xs:selector xpath=".//dbo_factBookings" />
-              <xs:field xpath="Copy_x0020_of_x0020_hotelId" />
+              <xs:field xpath="hotelId" />
             </xs:keyref>
-            <xs:keyref name="FK__factBooki__Copy_x0020___00200768" refer="dbo_dimCustomer_Constraint1">
+            <xs:keyref name="FK__factBooki__start__540C7B00" refer="Constraint1">
               <xs:selector xpath=".//dbo_factBookings" />
-              <xs:field xpath="Copy_x0020_of_x0020_custId" />
+              <xs:field xpath="startDateId" />
             </xs:keyref>
-            <xs:keyref name="FK__factBooki__Copy_x0020___02FC7413" refer="dbo_dimRoomTypes_Constraint1">
+            <xs:keyref name="FK__factBooki__roomT__58D1301D" refer="dbo_dimRoomTypes_Constraint1">
               <xs:selector xpath=".//dbo_factBookings" />
-              <xs:field xpath="Copy_x0020_of_x0020_roomTypeId" />
+              <xs:field xpath="roomTypeId" />
             </xs:keyref>
-            <xs:keyref name="FK__factBooki__Copy_x0020___7F2BE32F" refer="Constraint1">
+            <xs:keyref name="FK__factBooki__booki__56E8E7AB" refer="dbo_dimBookingMethod_Constraint1">
               <xs:selector xpath=".//dbo_factBookings" />
-              <xs:field xpath="Copy_x0020_of_x0020_endDateId" />
+              <xs:field xpath="bookingMethodId" />
             </xs:keyref>
-            <xs:keyref name="FK__factBooki__Copy_x0020___7E37BEF6" refer="Constraint1">
+            <xs:keyref name="FK__factBooki__custI__55F4C372" refer="dbo_dimCustomer_Constraint1">
               <xs:selector xpath=".//dbo_factBookings" />
-              <xs:field xpath="Copy_x0020_of_x0020_startDateId" />
+              <xs:field xpath="custId" />
             </xs:keyref>
           </xs:element>
         </xs:schema>

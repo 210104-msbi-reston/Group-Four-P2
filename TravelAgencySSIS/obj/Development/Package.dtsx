@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="40"
-  DTS:VersionGUID="{FFA85D76-FFAF-44A9-9086-051DA14ED056}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{A96DE882-A15B-40D3-B05B-AFA3F35C18AB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4772,7 +4772,7 @@
                       refId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].Columns[Copy of bookingMethodId]"
                       cachedDataType="i4"
                       cachedName="Copy of bookingMethodId"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[Copy of bookingMethodId]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodId]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 2.Outputs[Data Conversion Output].Columns[Copy of bookingMethodId]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].Columns[Copy of bookingMethodType]"
@@ -4780,21 +4780,21 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of bookingMethodType"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[Copy of bookingMethodType]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodType]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 2.Outputs[Data Conversion Output].Columns[Copy of bookingMethodType]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[Copy of bookingMethodId]"
+                      refId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodId]"
                       dataType="i4"
-                      name="Copy of bookingMethodId" />
+                      name="bookingMethodId" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[Copy of bookingMethodType]"
+                      refId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodType]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of bookingMethodType" />
+                      name="bookingMethodType" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -5018,7 +5018,7 @@
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custId]"
                       cachedDataType="i4"
                       cachedName="Copy of custId"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custId]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custId]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custId]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custName]"
@@ -5026,7 +5026,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of custName"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custName]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custName]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custName]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custAddress]"
@@ -5034,7 +5034,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of custAddress"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custAddress]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custAddress]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custAddress]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custCity]"
@@ -5042,7 +5042,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of custCity"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custCity]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custCity]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custCity]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custState]"
@@ -5050,7 +5050,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of custState"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custState]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custState]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custState]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custCountry]"
@@ -5058,7 +5058,7 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of custCountry"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custCountry]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custCountry]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custCountry]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custCountryCode]"
@@ -5066,13 +5066,13 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of custCountryCode"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custCountryCode]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custCountryCode]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custCountryCode]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custAge]"
                       cachedDataType="ui4"
                       cachedName="Copy of custAge"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custAge]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custAge]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custAge]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custGender]"
@@ -5080,13 +5080,13 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of custGender"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custGender]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custGender]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custGender]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custRewardMemberLevel]"
                       cachedDataType="i4"
                       cachedName="Copy of custRewardMemberLevel"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custRewardMemberLevel]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custRewardMemberLevel]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custRewardMemberLevel]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].Columns[Copy of custAccountType]"
@@ -5094,71 +5094,71 @@
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of custAccountType"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custAccountType]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custAccountType]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output].Columns[Copy of custAccountType]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custId]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custId]"
                       dataType="i4"
-                      name="Copy of custId" />
+                      name="custId" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custName]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custName]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of custName" />
+                      name="custName" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custAddress]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custAddress]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of custAddress" />
+                      name="custAddress" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custCity]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custCity]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of custCity" />
+                      name="custCity" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custState]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custState]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of custState" />
+                      name="custState" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custCountry]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custCountry]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of custCountry" />
+                      name="custCountry" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custCountryCode]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custCountryCode]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of custCountryCode" />
+                      name="custCountryCode" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custAge]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custAge]"
                       dataType="i4"
-                      name="Copy of custAge" />
+                      name="custAge" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custGender]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custGender]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of custGender" />
+                      name="custGender" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custRewardMemberLevel]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custRewardMemberLevel]"
                       dataType="i4"
-                      name="Copy of custRewardMemberLevel" />
+                      name="custRewardMemberLevel" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custAccountType]"
+                      refId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input].ExternalColumns[custAccountType]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="Copy of custAccountType" />
+                      name="custAccountType" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -5565,79 +5565,79 @@
                       refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateId]"
                       cachedDataType="i4"
                       cachedName="Copy of dateId"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateId]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateId]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateId]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateYear]"
+                      cachedDataType="i4"
+                      cachedName="Copy of dateYear"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateYear]"
+                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateYear]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateMonth]"
+                      cachedDataType="i4"
+                      cachedName="Copy of dateMonth"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateMonth]"
+                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateMonth]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateWeek]"
+                      cachedDataType="i4"
+                      cachedName="Copy of dateWeek"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateWeek]"
+                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateWeek]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateDay]"
+                      cachedDataType="i4"
+                      cachedName="Copy of dateDay"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateDay]"
+                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateDay]" />
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateQuarter]"
+                      cachedDataType="i4"
+                      cachedName="Copy of dateQuarter"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateQuarter]"
+                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateQuarter]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of date]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Copy of date"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of date]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[date]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of date]" />
-                    <inputColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateYear]"
-                      cachedDataType="i4"
-                      cachedName="Copy of dateYear"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateYear]"
-                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateYear]" />
-                    <inputColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateMonth]"
-                      cachedDataType="i4"
-                      cachedName="Copy of dateMonth"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateMonth]"
-                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateMonth]" />
-                    <inputColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateWeek]"
-                      cachedDataType="i4"
-                      cachedName="Copy of dateWeek"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateWeek]"
-                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateWeek]" />
-                    <inputColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateDay]"
-                      cachedDataType="i4"
-                      cachedName="Copy of dateDay"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateDay]"
-                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateDay]" />
-                    <inputColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].Columns[Copy of dateQuarter]"
-                      cachedDataType="i4"
-                      cachedName="Copy of dateQuarter"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateQuarter]"
-                      lineageId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output].Columns[Copy of dateQuarter]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateId]"
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateId]"
                       dataType="i4"
-                      name="Copy of dateId" />
+                      name="dateId" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of date]"
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[date]"
                       codePage="1252"
                       dataType="str"
                       length="50"
-                      name="Copy of date" />
+                      name="date" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateYear]"
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateYear]"
                       dataType="i4"
-                      name="Copy of dateYear" />
+                      name="dateYear" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateMonth]"
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateMonth]"
                       dataType="i4"
-                      name="Copy of dateMonth" />
+                      name="dateMonth" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateWeek]"
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateWeek]"
                       dataType="i4"
-                      name="Copy of dateWeek" />
+                      name="dateWeek" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateDay]"
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateDay]"
                       dataType="i4"
-                      name="Copy of dateDay" />
+                      name="dateDay" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[Copy of dateQuarter]"
+                      refId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input].ExternalColumns[dateQuarter]"
                       dataType="i4"
-                      name="Copy of dateQuarter" />
+                      name="dateQuarter" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -6344,12 +6344,18 @@
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
+                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].Columns[Copy of hotelID]"
+                      cachedDataType="i4"
+                      cachedName="Copy of hotelID"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Import Booking Data Excel\Data Conversion 5.Outputs[Data Conversion Output].Columns[Copy of hotelID]" />
+                    <inputColumn
                       refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].Columns[Copy of hotelName]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of hotelName"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelName]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelName]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 5.Outputs[Data Conversion Output].Columns[Copy of hotelName]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].Columns[Copy of hotelAddress]"
@@ -6357,43 +6363,37 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of hotelAddress"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelAddress]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelAddress]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 5.Outputs[Data Conversion Output].Columns[Copy of hotelAddress]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].Columns[Copy of hotelNumRooms]"
                       cachedDataType="i4"
                       cachedName="Copy of hotelNumRooms"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelNumRooms]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelNumRooms]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 5.Outputs[Data Conversion Output].Columns[Copy of hotelNumRooms]" />
-                    <inputColumn
-                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].Columns[Copy of hotelID]"
-                      cachedDataType="i4"
-                      cachedName="Copy of hotelID"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of id]"
-                      lineageId="Package\Import Booking Data Excel\Data Conversion 5.Outputs[Data Conversion Output].Columns[Copy of hotelID]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of id]"
+                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[id]"
                       dataType="i4"
-                      name="Copy of id" />
+                      name="id" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelName]"
+                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelName]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of hotelName" />
+                      name="hotelName" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelAddress]"
+                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelAddress]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of hotelAddress" />
+                      name="hotelAddress" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelNumRooms]"
+                      refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelNumRooms]"
                       dataType="i4"
-                      name="Copy of hotelNumRooms" />
+                      name="hotelNumRooms" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -6656,7 +6656,7 @@
                       refId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].Columns[Copy of paymentTypeId]"
                       cachedDataType="i4"
                       cachedName="Copy of paymentTypeId"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of paymentTypeId]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[paymentTypeId]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 4.Outputs[Data Conversion Output].Columns[Copy of paymentTypeId]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].Columns[Copy of paymentType]"
@@ -6664,21 +6664,21 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of paymentType"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of paymentType]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[paymentType]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 4.Outputs[Data Conversion Output].Columns[Copy of paymentType]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of paymentTypeId]"
+                      refId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[paymentTypeId]"
                       dataType="i4"
-                      name="Copy of paymentTypeId" />
+                      name="paymentTypeId" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of paymentType]"
+                      refId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input].ExternalColumns[paymentType]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of paymentType" />
+                      name="paymentType" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -6902,7 +6902,7 @@
                       refId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].Columns[Copy of roomTypeId]"
                       cachedDataType="i4"
                       cachedName="Copy of roomTypeId"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of roomTypeId]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[roomTypeId]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 6.Outputs[Data Conversion Output].Columns[Copy of roomTypeId]" />
                     <inputColumn
                       refId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].Columns[Copy of roomType]"
@@ -6910,21 +6910,21 @@
                       cachedDataType="str"
                       cachedLength="255"
                       cachedName="Copy of roomType"
-                      externalMetadataColumnId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of roomType]"
+                      externalMetadataColumnId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[roomType]"
                       lineageId="Package\Import Booking Data Excel\Data Conversion 6.Outputs[Data Conversion Output].Columns[Copy of roomType]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of roomTypeId]"
+                      refId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[roomTypeId]"
                       dataType="i4"
-                      name="Copy of roomTypeId" />
+                      name="roomTypeId" />
                     <externalMetadataColumn
-                      refId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[Copy of roomType]"
+                      refId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input].ExternalColumns[roomType]"
                       codePage="1252"
                       dataType="str"
                       length="255"
-                      name="Copy of roomType" />
+                      name="roomType" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -7691,95 +7691,95 @@
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of factBookingId]"
                       cachedDataType="i4"
                       cachedName="Copy of factBookingId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of factBookingId]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[factBookingId]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of factBookingId]" />
                     <inputColumn
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of hotelId]"
                       cachedDataType="i4"
                       cachedName="Copy of hotelId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelId]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[hotelId]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of hotelId]" />
                     <inputColumn
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of startDateId]"
                       cachedDataType="i4"
                       cachedName="Copy of startDateId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of startDateId]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[startDateId]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of startDateId]" />
                     <inputColumn
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of endDateId]"
                       cachedDataType="i4"
                       cachedName="Copy of endDateId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of endDateId]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[endDateId]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of endDateId]" />
                     <inputColumn
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of custId]"
                       cachedDataType="i4"
                       cachedName="Copy of custId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custId]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[custId]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of custId]" />
-                    <inputColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of bookingMethodId]"
-                      cachedDataType="i4"
-                      cachedName="Copy of bookingMethodId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of bookingMethodId]"
-                      lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of bookingMethodId]" />
                     <inputColumn
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of paymentTypeId]"
                       cachedDataType="i4"
                       cachedName="Copy of paymentTypeId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of paymentTypeId]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[paymentTypeId]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of paymentTypeId]" />
                     <inputColumn
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of roomTypeId]"
                       cachedDataType="i4"
                       cachedName="Copy of roomTypeId"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of roomTypeId]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[roomTypeId]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of roomTypeId]" />
                     <inputColumn
                       refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of cost]"
                       cachedDataType="i4"
                       cachedName="Copy of cost"
-                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of cost]"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[cost]"
                       lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of cost]" />
+                    <inputColumn
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].Columns[Copy of bookingMethodId]"
+                      cachedDataType="i4"
+                      cachedName="Copy of bookingMethodId"
+                      externalMetadataColumnId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodId]"
+                      lineageId="Package\Import Fact Table Excel\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of bookingMethodId]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of factBookingId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[bookingMethodId]"
                       dataType="i4"
-                      name="Copy of factBookingId" />
+                      name="bookingMethodId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of hotelId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[factBookingId]"
                       dataType="i4"
-                      name="Copy of hotelId" />
+                      name="factBookingId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of startDateId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[hotelId]"
                       dataType="i4"
-                      name="Copy of startDateId" />
+                      name="hotelId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of endDateId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[startDateId]"
                       dataType="i4"
-                      name="Copy of endDateId" />
+                      name="startDateId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of custId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[endDateId]"
                       dataType="i4"
-                      name="Copy of custId" />
+                      name="endDateId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of bookingMethodId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[custId]"
                       dataType="i4"
-                      name="Copy of bookingMethodId" />
+                      name="custId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of paymentTypeId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[paymentTypeId]"
                       dataType="i4"
-                      name="Copy of paymentTypeId" />
+                      name="paymentTypeId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of roomTypeId]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[roomTypeId]"
                       dataType="i4"
-                      name="Copy of roomTypeId" />
+                      name="roomTypeId" />
                     <externalMetadataColumn
-                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[Copy of cost]"
+                      refId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input].ExternalColumns[cost]"
                       dataType="i4"
-                      name="Copy of cost" />
+                      name="cost" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -9102,6 +9102,19 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Import Booking Data Excel\dimBookingMethod">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Import Booking Data Excel\dimHotel">
     <Properties>
       <Property>
@@ -9237,17 +9250,21 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="162,42"
+          Id="Package\Import Fact Table Excel\Not Null Bookings"
+          TopLeft="467,216" />
+        <NodeLayout
           Size="139,42"
           Id="Package\Import Fact Table Excel\factBookings"
           TopLeft="473.5,325.5" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\Import Fact Table Excel\Data Conversion"
-          TopLeft="470.5,144.5" />
-        <NodeLayout
           Size="174,42"
           Id="Package\Import Fact Table Excel\factBookings Source"
           TopLeft="466.5,64.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Import Fact Table Excel\Data Conversion"
+          TopLeft="470.5,144.5" />
         <EdgeLayout
           Id="Package\Import Fact Table Excel.Paths[Excel Source Output]"
           TopLeft="551,106.5">
@@ -9270,10 +9287,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="162,42"
-          Id="Package\Import Fact Table Excel\Not Null Bookings"
-          TopLeft="467,216" />
         <EdgeLayout
           Id="Package\Import Fact Table Excel.Paths[Data Conversion Output]"
           TopLeft="548.25,186.5">
@@ -9316,7 +9329,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-37.44578125,22,74.8915625,16"
+              BoundingBox="-28.71873046875,25.12548828125,57.4374609375,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
