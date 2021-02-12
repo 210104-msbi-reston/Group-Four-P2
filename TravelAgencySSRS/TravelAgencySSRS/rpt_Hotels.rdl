@@ -394,7 +394,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Cost.Value</Value>
+                                  <Value>=FormatCurrency(Fields!Cost.Value)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                   </Style>
@@ -415,6 +415,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -477,7 +478,7 @@
             <Top>0.42583in</Top>
             <Left>2.11333in</Left>
             <Height>0.5in</Height>
-            <Width>6.0625in</Width>
+            <Width>6.06249in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
