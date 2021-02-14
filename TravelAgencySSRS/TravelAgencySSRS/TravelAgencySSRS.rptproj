@@ -49,8 +49,10 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
+    <DataSet Include="DataSet_Account_Type.rsd" />
     <DataSet Include="DataSet_Booking_Payment.rsd" />
     <DataSet Include="DataSet_Date_Revenue_Bookings.rsd" />
+    <DataSet Include="DataSet_Date_Year.rsd" />
     <DataSet Include="DataSet_Guest_Booking.rsd" />
     <DataSet Include="DataSet_Hotels_Annual_Revenue.rsd" />
     <DataSet Include="Travel_Agency_Data_Set.rsd" />
@@ -59,11 +61,11 @@
     <DataSource Include="Travel_Agency_Source.rds" />
   </ItemGroup>
   <ItemGroup>
+    <Report Include="rpt_Account_Type.rdl" />
     <Report Include="rpt_Booking_Payment.rdl" />
+    <Report Include="rpt_Date_Year.rdl" />
     <Report Include="rpt_Guest_Booking.rdl" />
-    <Report Include="rpt_Hotels.rdl" />
     <Report Include="rpt_hotel_annual_revenue.rdl" />
-    <Report Include="rpt_Revenue_Bookings_Dates.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
