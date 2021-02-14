@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="42"
-  DTS:VersionGUID="{A96DE882-A15B-40D3-B05B-AFA3F35C18AB}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{B0186217-DF7C-4488-A7BA-2CA5EFBA447D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -6388,7 +6388,7 @@
                       refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelAddress]"
                       codePage="1252"
                       dataType="str"
-                      length="255"
+                      length="100"
                       name="hotelAddress" />
                     <externalMetadataColumn
                       refId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input].ExternalColumns[hotelNumRooms]"
@@ -7073,6 +7073,95 @@
               </outputs>
             </component>
             <component
+              refId="Package\Import Booking Data Excel\Not Null Booking Method"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Not Null Booking Method"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data Excel\Not Null Booking Method.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Booking Method.Inputs[Conditional Split Input].Columns[bookingMethodId]"
+                      cachedDataType="r8"
+                      cachedName="bookingMethodId"
+                      lineageId="Package\Import Booking Data Excel\dimBookingMethod Source.Outputs[Excel Source Output].Columns[bookingMethodId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[is null]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="is null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Booking Method.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\Import Booking Data Excel\dimBookingMethod Source.Outputs[Excel Source Output].Columns[bookingMethodId]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(bookingMethodId)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[is not null]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="is not null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Booking Method.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Booking Method.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Import Booking Data Excel\Not Null Customers"
               componentClassID="Microsoft.ConditionalSplit"
               contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -7096,12 +7185,12 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Import Booking Data Excel\Not Null Customers.Outputs[Case 1]"
+                  refId="Package\Import Booking Data Excel\Not Null Customers.Outputs[is null]"
                   description="Output 1 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="Case 1"
+                  name="is null"
                   synchronousInputId="Package\Import Booking Data Excel\Not Null Customers.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -7124,10 +7213,10 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Import Booking Data Excel\Not Null Customers.Outputs[Id is not Null]"
+                  refId="Package\Import Booking Data Excel\Not Null Customers.Outputs[is not Null]"
                   description="Default Output of the Conditional Split Transformation"
                   exclusionGroup="1"
-                  name="Id is not Null"
+                  name="is not Null"
                   synchronousInputId="Package\Import Booking Data Excel\Not Null Customers.Inputs[Conditional Split Input]">
                   <properties>
                     <property
@@ -7162,6 +7251,95 @@
               </outputs>
             </component>
             <component
+              refId="Package\Import Booking Data Excel\Not Null date"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Not Null date"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data Excel\Not Null date.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\Not Null date.Inputs[Conditional Split Input].Columns[dateId]"
+                      cachedDataType="r8"
+                      cachedName="dateId"
+                      lineageId="Package\Import Booking Data Excel\dimDate Source.Outputs[Excel Source Output].Columns[dateId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null date.Outputs[is null]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="is null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null date.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\Import Booking Data Excel\dimDate Source.Outputs[Excel Source Output].Columns[dateId]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(dateId)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null date.Outputs[is not null]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="is not null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null date.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null date.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null date.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null date.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null date.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null date.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null date.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Import Booking Data Excel\Not Null Hotels"
               componentClassID="Microsoft.ConditionalSplit"
               contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -7185,12 +7363,12 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Import Booking Data Excel\Not Null Hotels.Outputs[Case 1]"
+                  refId="Package\Import Booking Data Excel\Not Null Hotels.Outputs[is null]"
                   description="Output 1 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="Case 1"
+                  name="is null"
                   synchronousInputId="Package\Import Booking Data Excel\Not Null Hotels.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -7213,10 +7391,10 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Import Booking Data Excel\Not Null Hotels.Outputs[Id is not Null]"
+                  refId="Package\Import Booking Data Excel\Not Null Hotels.Outputs[is not Null]"
                   description="Default Output of the Conditional Split Transformation"
                   exclusionGroup="1"
-                  name="Id is not Null"
+                  name="is not Null"
                   synchronousInputId="Package\Import Booking Data Excel\Not Null Hotels.Inputs[Conditional Split Input]">
                   <properties>
                     <property
@@ -7250,38 +7428,216 @@
                 </output>
               </outputs>
             </component>
+            <component
+              refId="Package\Import Booking Data Excel\Not Null Payment"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Not Null Payment"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data Excel\Not Null Payment.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Payment.Inputs[Conditional Split Input].Columns[paymentTypeId]"
+                      cachedDataType="r8"
+                      cachedName="paymentTypeId"
+                      lineageId="Package\Import Booking Data Excel\dimPaymentTypes Source.Outputs[Excel Source Output].Columns[paymentTypeId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Payment.Outputs[is null]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="is null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Payment.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\Import Booking Data Excel\dimPaymentTypes Source.Outputs[Excel Source Output].Columns[paymentTypeId]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(paymentTypeId)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Payment.Outputs[is not null]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="is not null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Payment.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Payment.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Payment.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Payment.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null Payment.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Payment.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null Payment.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Booking Data Excel\Not Null Room"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Not Null Room"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Import Booking Data Excel\Not Null Room.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Room.Inputs[Conditional Split Input].Columns[roomTypeId]"
+                      cachedDataType="r8"
+                      cachedName="roomTypeId"
+                      lineageId="Package\Import Booking Data Excel\dimRoomTypes Source.Outputs[Excel Source Output].Columns[roomTypeId]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Room.Outputs[is null]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="is null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Room.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\Import Booking Data Excel\dimRoomTypes Source.Outputs[Excel Source Output].Columns[roomTypeId]})</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(roomTypeId)</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Room.Outputs[is not null]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="is not null"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Room.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Import Booking Data Excel\Not Null Room.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Import Booking Data Excel\Not Null Room.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Room.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null Room.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Booking Data Excel\Not Null Room.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Booking Data Excel\Not Null Room.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
           </components>
           <paths>
             <path
               refId="Package\Import Booking Data Excel.Paths[Data Conversion Output]"
-              endId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input]"
-              name="Data Conversion Output"
-              startId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output1]"
-              endId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input]"
-              name="Data Conversion Output"
-              startId="Package\Import Booking Data Excel\Data Conversion 4.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output2]"
-              endId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input]"
-              name="Data Conversion Output"
-              startId="Package\Import Booking Data Excel\Data Conversion 6.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output3]"
-              endId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input]"
-              name="Data Conversion Output"
-              startId="Package\Import Booking Data Excel\Data Conversion 2.Outputs[Data Conversion Output]" />
-            <path
-              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output4]"
               endId="Package\Import Booking Data Excel\Not Null Hotels.Inputs[Conditional Split Input]"
               name="Data Conversion Output"
               startId="Package\Import Booking Data Excel\Data Conversion 5.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output5]"
+              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output1]"
               endId="Package\Import Booking Data Excel\Not Null Customers.Inputs[Conditional Split Input]"
               name="Data Conversion Output"
               startId="Package\Import Booking Data Excel\Data Conversion 1.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output5]"
+              endId="Package\Import Booking Data Excel\Not Null date.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Import Booking Data Excel\Data Conversion 3.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output4]"
+              endId="Package\Import Booking Data Excel\Not Null Booking Method.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Import Booking Data Excel\Data Conversion 2.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output2]"
+              endId="Package\Import Booking Data Excel\Not Null Payment.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Import Booking Data Excel\Data Conversion 4.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[Data Conversion Output3]"
+              endId="Package\Import Booking Data Excel\Not Null Room.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Import Booking Data Excel\Data Conversion 6.Outputs[Data Conversion Output]" />
             <path
               refId="Package\Import Booking Data Excel.Paths[Excel Source Output]"
               endId="Package\Import Booking Data Excel\Data Conversion 1.Inputs[Data Conversion Input]"
@@ -7316,12 +7672,32 @@
               refId="Package\Import Booking Data Excel.Paths[Id is not Null]"
               endId="Package\Import Booking Data Excel\dimHotel.Inputs[OLE DB Destination Input]"
               name="Id is not Null"
-              startId="Package\Import Booking Data Excel\Not Null Hotels.Outputs[Id is not Null]" />
+              startId="Package\Import Booking Data Excel\Not Null Hotels.Outputs[is not Null]" />
             <path
               refId="Package\Import Booking Data Excel.Paths[Id is not Null1]"
               endId="Package\Import Booking Data Excel\dimCustomer.Inputs[OLE DB Destination Input]"
               name="Id is not Null"
-              startId="Package\Import Booking Data Excel\Not Null Customers.Outputs[Id is not Null]" />
+              startId="Package\Import Booking Data Excel\Not Null Customers.Outputs[is not Null]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[is not null1]"
+              endId="Package\Import Booking Data Excel\dimRoomTypes.Inputs[OLE DB Destination Input]"
+              name="is not null"
+              startId="Package\Import Booking Data Excel\Not Null Room.Outputs[is not null]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[is not null2]"
+              endId="Package\Import Booking Data Excel\dimBookingMethod.Inputs[OLE DB Destination Input]"
+              name="is not null"
+              startId="Package\Import Booking Data Excel\Not Null Booking Method.Outputs[is not null]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[is not null]"
+              endId="Package\Import Booking Data Excel\dimPaymentTypes.Inputs[OLE DB Destination Input]"
+              name="is not null"
+              startId="Package\Import Booking Data Excel\Not Null Payment.Outputs[is not null]" />
+            <path
+              refId="Package\Import Booking Data Excel.Paths[is not null3]"
+              endId="Package\Import Booking Data Excel\dimDate.Inputs[OLE DB Destination Input]"
+              name="is not null"
+              startId="Package\Import Booking Data Excel\Not Null date.Outputs[is not null]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -8074,12 +8450,12 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Import Fact Table Excel\Not Null Bookings.Outputs[Case 1]"
+                  refId="Package\Import Fact Table Excel\Not Null Bookings.Outputs[is null]"
                   description="Output 1 of the Conditional Split Transformation"
                   errorOrTruncationOperation="Computation"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="Case 1"
+                  name="is null"
                   synchronousInputId="Package\Import Fact Table Excel\Not Null Bookings.Inputs[Conditional Split Input]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -8102,10 +8478,10 @@
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Import Fact Table Excel\Not Null Bookings.Outputs[Id is not Null]"
+                  refId="Package\Import Fact Table Excel\Not Null Bookings.Outputs[is not Null]"
                   description="Default Output of the Conditional Split Transformation"
                   exclusionGroup="1"
-                  name="Id is not Null"
+                  name="is not Null"
                   synchronousInputId="Package\Import Fact Table Excel\Not Null Bookings.Inputs[Conditional Split Input]">
                   <properties>
                     <property
@@ -8155,7 +8531,7 @@
               refId="Package\Import Fact Table Excel.Paths[Id is not Null]"
               endId="Package\Import Fact Table Excel\factBookings.Inputs[OLE DB Destination Input]"
               name="Id is not Null"
-              startId="Package\Import Fact Table Excel\Not Null Bookings.Outputs[Id is not Null]" />
+              startId="Package\Import Fact Table Excel\Not Null Bookings.Outputs[is not Null]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -8700,7 +9076,7 @@
         <NodeLayout
           Size="169,42"
           Id="Package\Import Booking Data Excel\dimBookingMethod"
-          TopLeft="717,240" />
+          TopLeft="720,323" />
         <NodeLayout
           Size="165,42"
           Id="Package\Import Booking Data Excel\Data Conversion 3"
@@ -8732,7 +9108,7 @@
         <NodeLayout
           Size="118,42"
           Id="Package\Import Booking Data Excel\dimDate"
-          TopLeft="934,249" />
+          TopLeft="933,335" />
         <NodeLayout
           Size="165,42"
           Id="Package\Import Booking Data Excel\Data Conversion 2"
@@ -8744,7 +9120,7 @@
         <NodeLayout
           Size="165,42"
           Id="Package\Import Booking Data Excel\dimPaymentTypes"
-          TopLeft="128,247" />
+          TopLeft="134,332" />
         <NodeLayout
           Size="154,42"
           Id="Package\Import Booking Data Excel\dimDate Source"
@@ -8760,7 +9136,7 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Import Booking Data Excel\dimRoomTypes"
-          TopLeft="525,245" />
+          TopLeft="523,325" />
         <NodeLayout
           Size="141,42"
           Id="Package\Import Booking Data Excel\dimCustomer"
@@ -8773,94 +9149,6 @@
           Size="165,42"
           Id="Package\Import Booking Data Excel\Data Conversion 1"
           TopLeft="336,168" />
-        <EdgeLayout
-          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output3]"
-          TopLeft="800,197">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,43"
-              Start="0,0"
-              End="0,35.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output2]"
-          TopLeft="601.5,198">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,47"
-              Start="0,0"
-              End="0,39.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output1]"
-          TopLeft="210.5,212">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,35"
-              Start="0,0"
-              End="0,27.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output]"
-          TopLeft="991.25,209">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,40"
-              Start="0,0"
-              End="0,32.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Import Booking Data Excel.Paths[Id is not Null1]"
           TopLeft="411.75,289">
@@ -8881,7 +9169,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-28.71873046875,10.37548828125,57.4374609375,9.7490234375"
+              BoundingBox="-22.44072265625,10.37548828125,44.8814453125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -8905,7 +9193,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-28.71873046875,16.37548828125,57.4374609375,9.7490234375"
+              BoundingBox="-22.44072265625,16.37548828125,44.8814453125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9042,7 +9330,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output5]"
+          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output1]"
           TopLeft="414.75,210">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -9064,7 +9352,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output4]"
+          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output]"
           TopLeft="1179,210">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -9083,6 +9371,206 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Import Booking Data Excel\Not Null Payment"
+          TopLeft="129,248" />
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output2]"
+          TopLeft="210,212">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[is not null]"
+          TopLeft="213,290">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-21.89572265625,12.37548828125,43.7914453125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Import Booking Data Excel\Not Null Room"
+          TopLeft="529,245" />
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output3]"
+          TopLeft="602.5,198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[is not null1]"
+          TopLeft="600.5,287">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38"
+              Start="0,0"
+              End="0,30.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-21.89572265625,10.37548828125,43.7914453125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Import Booking Data Excel\Not Null Booking Method"
+          TopLeft="705,244" />
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output4]"
+          TopLeft="800.75,197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[is not null2]"
+          TopLeft="803.75,286">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-21.89572265625,9.87548828125,43.7914453125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Import Booking Data Excel\Not Null date"
+          TopLeft="925,245" />
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[Data Conversion Output5]"
+          TopLeft="992.5,209">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,36"
+              Start="0,0"
+              End="0,28.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Booking Data Excel.Paths[is not null3]"
+          TopLeft="993.75,287">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48"
+              Start="0,0"
+              End="0,40.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-21.89572265625,15.37548828125,43.7914453125,9.7490234375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9329,7 +9817,7 @@
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-28.71873046875,25.12548828125,57.4374609375,9.7490234375"
+              BoundingBox="-22.44072265625,25.12548828125,44.8814453125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>TravelAgencySSIS-DB-to-DW</Name>
-    <LastWriteTime>2021-02-11T20:19:24.3088219Z</LastWriteTime>
+    <LastWriteTime>2021-02-12T21:56:41.1874212Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Package.dtsx</Name>
-      <LastWriteTime>2021-02-11T20:30:12.2304547Z</LastWriteTime>
+      <LastWriteTime>2021-02-14T23:10:53.0707394Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
