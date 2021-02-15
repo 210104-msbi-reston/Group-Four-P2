@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5e78d59e-6515-4371-9e7c-9295d0d7915c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3c5fdf5f-355b-4187-8c57-68ba82c4a2e1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Hotel</ID>
   <Name>Dim Hotel</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,41 +68,41 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="db3d3dac-a6a4-4140-a9b6-f8bd655e4490">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ad29b2f6-ab3e-4712-906f-0645a8dd60a0">
     <DataSourceViewID>Travel Agency DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="f1e0e0ab-fd12-40ac-b1bd-e98e098cc62b">
+  <ErrorConfiguration dwd:design-time-name="ae7583ac-9bc3-42c2-a2f0-eaa930331382">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="4b023d48-f9a7-4e0b-ae7e-20ede6d3fd07">
+    <Attribute dwd:design-time-name="42edefec-8bb0-4881-aff3-c837aee94856">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="134eef37-6b93-4b76-849f-c22be8d376b5">
+        <KeyColumn dwd:design-time-name="72bfc617-073d-4b9f-a96a-b3a8cf258d0f">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7cac5188-6e33-4f28-b145-b49b1c7010c7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b6a84f8-1008-411c-8c85-4a13d7cc1da8">
             <TableID>dbo_dimHotel</TableID>
             <ColumnID>id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="97e5bed1-21e7-4e1a-b2fd-d210c7b74374">
+        <AttributeRelationship dwd:design-time-name="4b5a0d4c-525d-4704-b3e4-ead2949fb035">
           <AttributeID>Hotel Name</AttributeID>
           <Name>Hotel Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c920f3c9-7c1d-4ddb-9825-f2e39b40ace7">
+        <AttributeRelationship dwd:design-time-name="32efb477-6017-4f32-a905-5295df968b05">
           <AttributeID>Hotel Address</AttributeID>
           <Name>Hotel Address</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="745591a4-d845-4964-bb08-7d45ffb98090">
+        <AttributeRelationship dwd:design-time-name="0d312387-a346-4285-b9b4-b6198bfea1b8">
           <AttributeID>Hotel Num Rooms</AttributeID>
           <Name>Hotel Num Rooms</Name>
         </AttributeRelationship>
@@ -111,14 +111,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a58f120a-80e9-4e9c-8c17-b91fafc05176">
+    <Attribute dwd:design-time-name="21fe9eea-6f38-41f0-887d-6dbde8337271">
       <ID>Hotel Name</ID>
       <Name>Hotel Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0d2f9ce9-7f23-40bd-a14d-75e438c6e810">
+        <KeyColumn dwd:design-time-name="e8041cd0-b8bd-4589-98df-e571832e0846">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="796afd63-f7a8-400d-a1b4-db785c1b8241">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca9decd2-d004-4143-b449-1b81248bd56a">
             <TableID>dbo_dimHotel</TableID>
             <ColumnID>hotelName</ColumnID>
           </Source>
@@ -127,14 +127,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a53cdcf6-a1a4-4d51-b511-b29e1d602c61">
+    <Attribute dwd:design-time-name="1a4c3ab1-4618-4222-afc1-2c711438f62c">
       <ID>Hotel Address</ID>
       <Name>Hotel Address</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="dd49b871-2f44-491a-af13-937c6c5d8ad0">
+        <KeyColumn dwd:design-time-name="6965d296-8182-4353-97bc-5a6be350b7d6">
           <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7312b66e-df65-4d6f-84e4-c51944ad0816">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f77cd59-68b3-486a-93d4-7199c6e05484">
             <TableID>dbo_dimHotel</TableID>
             <ColumnID>hotelAddress</ColumnID>
           </Source>
@@ -143,13 +143,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="24364f53-0925-406e-8dcf-95966ec07198">
+    <Attribute dwd:design-time-name="3a053b76-9455-4407-99bb-3995684c965b">
       <ID>Hotel Num Rooms</ID>
       <Name>Hotel Num Rooms</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="357ac7b5-f25d-4aad-ab75-e028cfdf9a1e">
+        <KeyColumn dwd:design-time-name="fa1ec8d5-c3e9-4c13-bde7-adbfcc6feeae">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="47cdff1e-141f-45be-a9db-fd5c24217fc5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30fce08e-d321-4d74-94a9-109a334e923b">
             <TableID>dbo_dimHotel</TableID>
             <ColumnID>hotelNumRooms</ColumnID>
           </Source>

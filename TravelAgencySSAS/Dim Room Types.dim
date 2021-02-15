@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="974ef489-24f8-4434-86cf-e65e43562814" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f7660832-a75d-4b89-973f-cf83725d251c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Room Types</ID>
   <Name>Dim Room Types</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,33 +68,33 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b0384f54-839e-414f-aee7-a93c483bb18e">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="46dc685d-0183-4f9c-8db0-e2a3c6c6042b">
     <DataSourceViewID>Travel Agency DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="e2161766-fc1c-4e2c-8ef2-9e412fe5ff2e">
+  <ErrorConfiguration dwd:design-time-name="9005ab6f-7894-49e2-857e-fa87ac8a38e8">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="5ce68ed0-dc12-49fb-875c-6b11a43af6dc">
+    <Attribute dwd:design-time-name="72748075-6ce0-4014-a19e-02b4c674f076">
       <ID>Room Type Id</ID>
       <Name>Room Type Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a44eb36d-e4ce-4254-946e-8e82189562c9">
+        <KeyColumn dwd:design-time-name="d44c0105-42b7-43a9-8fe5-b208072910a9">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="430c4004-ba67-4109-af7b-08211f925823">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="28a53840-2b47-4f9a-920f-a2ebaf9dfdc1">
             <TableID>dbo_dimRoomTypes</TableID>
             <ColumnID>roomTypeId</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="faf14788-5728-494c-b48c-b50f27269109">
+        <AttributeRelationship dwd:design-time-name="10325d6d-0146-4f4a-957e-89e552aba7a8">
           <AttributeID>Room Type</AttributeID>
           <Name>Room Type</Name>
         </AttributeRelationship>
@@ -103,14 +103,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c6fa84f6-c555-430b-b921-164f7db629f0">
+    <Attribute dwd:design-time-name="822687b7-7aab-4c4c-b443-42506b1caa1d">
       <ID>Room Type</ID>
       <Name>Room Type</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="539a567b-63da-43eb-b461-3a64eddacb8b">
+        <KeyColumn dwd:design-time-name="afa5363d-e685-4591-88aa-508a34b83329">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c4826cd-1d3f-4be6-af79-a68c458d0e52">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd7a474c-39a4-4bb8-a951-72666bbd2cb2">
             <TableID>dbo_dimRoomTypes</TableID>
             <ColumnID>roomType</ColumnID>
           </Source>

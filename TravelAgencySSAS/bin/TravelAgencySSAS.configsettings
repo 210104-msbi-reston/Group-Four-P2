@@ -13,22 +13,22 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Dim Customer</ID>
+        <ID>Dim Date</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Booking Method</ID>
+        <ID>Dim Payment Types</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Customer</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Room Types</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Date</ID>
+        <ID>Dim Booking Method</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Hotel</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Payment Types</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
