@@ -29,7 +29,10 @@ git clone https://github.com/210104-msbi-reston/Group-Four-P2.git
 
 ## Usage
 
-Restore the database to SQL Server using TravelAgency.bak. Restore the data warehouse to SQL Server using TravelAgencyDW.bak. Restore the OLAP cube to SQL Analysis Server using TravelAgencySSAS.abf. Files used to generate reports from the cube are located in the TravelAgencySSRS folder.
+* Restore the database to SQL Server using TravelAgency.bak.
+* Restore the data warehouse to SQL Server using TravelAgencyDW.bak.
+* Restore the OLAP cube to SQL Analysis Server using TravelAgencySSAS.abf.
+* Files used to generate reports from the cube are located in the TravelAgencySSRS folder.
 
 ## Contributors
 
