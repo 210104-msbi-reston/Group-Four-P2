@@ -26,7 +26,12 @@ select * from dimHotel
 select * from dimPaymentTypes
 select * from dimRoomTypes
 select * from dimBookingMethod
-select * from [factBookings]
+select count(*) from [factBookings]
+select * from factBookings order by factBookingId desc
+
+select * from dimCustomer order by custId desc
+
+select * from dimCustomer where [custId] = 14104
 
 --create [dimBookingMethod] table
 CREATE TABLE [dbo].[dimBookingMethod](

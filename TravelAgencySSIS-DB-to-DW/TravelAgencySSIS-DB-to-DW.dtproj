@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">SLEDGEHAMMER</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAACAAAAAAAQZgAAAAEAACAAAAB7heFhSOwx5zn1A5B0sodXrCFp2xuqOfWx3qIDBfvkwwAAAAAOgAAAAAIAACAAAABCCXpD+DCeS56Gy/aTGHX7kE2vBAczmQp3Z/6mFiA9dJAAAADMKjd59jxtAJdcxbogrMdzZ8XdzinOmzQ49WmVOBVwWuEOqZevLKkmT27/gTuJ4q7Toc+w4toN9m9WnZEj7cd8EpM0NMZ00gqmylxERn3UyAh0877GfOpwm2OZ8g0VS3VvFk6LBt9cd4awePT/8nGzXMD4dSgVWERpGEduCrDupKskuIppbFVZp7qbwW69y89AAAAAVh0YivnRR19qGe/DKYtEuyCc1UOISROAVamGQlKuPJiZnEU+UlVr112IURwGDWDmsrOKFBPq0YrpYxH7QSgLOg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbWRfomeOIkuLtrCWNlE+IgAAAAACAAAAAAAQZgAAAAEAACAAAADkEdkhVAKstz6ZAjK112Sueqcv4azTStYJVJh0tKnuUAAAAAAOgAAAAAIAACAAAACZk9gPG44uvH84MBxKD4xLfKwIpu/JvGlH0i0F4V/7oZAAAAB+1Q5VR+J1rs+mlTaZERiWhKp1aTJnfm7RqGsWarJfpxSm3Q3OP4nM7v+jt4GylKBiVPpZDCIU+gdWwqolRsZik8QT9A+TtOrlvUv+hXQe40pgRj511snK6wYry2jmpZlRLevO+mZ6SGq6hvSyorA7/s+w2p6CAjor9e2+Bq92/gWt9yP1ad7hVVRBXTwIWC1AAAAA3v81gzApmRg4kZ84+3ikbl6UEp97D+VIRHdiZE8BS7d3SoitZ44dsXfzMnumq1bNGeFa1fe6C8Xfx4ySi14Ucw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">25</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{74DD38E9-352E-49CF-B76B-EEA2D4ECCD8C}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{AE4B2E03-7830-43C6-971C-97107BC977A7}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -78,7 +78,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\S\Desktop\project2\Excel Empty Sheet Location\Travel Agency - DW - Empty - ver2.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\project2Data\Travel Agency - DW - Empty - ver2.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -93,7 +93,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\S\Desktop\project2\Excel Empty Sheet Location\Travel Agency - DW - Empty - ver2.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\project2Data\Travel Agency - DW - Empty - ver2.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -166,7 +166,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Users\S\Desktop\project2\Excel Empty Sheet Location\Travel Agency - DW - Empty - ver2.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\project2Data\Travel Agency - DW - Empty - ver2.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
