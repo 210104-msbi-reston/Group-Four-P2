@@ -29,3 +29,33 @@ as
 		on Bookings.fk_booking_payment_type_id = Payment_Types.pk_payment_type_id
 
 select * from [All Bookings]
+
+create procedure proc_newCustomer(@p_custId int, @p_custName varchar(50), @p_custAddress varchar(50), @p_custAge int, @p_custGender varchar(20), @p_custRewards int, @p_custAcct varchar(20), @p_custCity varchar(50), @p_custState varchar(50), @p_custCountry varchar(50))
+as
+begin
+	declare @cityId int
+	set @cityId = (select Customer_Cities.pk_customer_city_id 
+	from Customer_Cities
+	join City_Countries
+	on Customer_Cities.fk_city_country_id = City_Countries.pk_city_country_id
+	where Customer_Cities.city_name = @p_custCity and City_Countries.country_name = @p_custCountry)
+	if @cityId is null
+	begin
+		insert into City_Countries values(@p_custCountry, '')
+		insert into Customer_Cities values(@p_custCity, @p_custState, SCOPE_IDENTITY())
+		select @cityId = SCOPE_IDENTITY()
+	end
+	insert into Customers values(@p_custId, @p_custName, @p_custAddress, @p_custAge, @p_custGender, @p_custRewards, @p_custAcct, @cityId)
+end
+
+create procedure proc_newBooking(@p_bookingId int, @p_hotId int, @p_stDateId int, @p_eDateId int, @p_custId int, @p_methodId int, @p_payId int, @p_roomId int)
+as
+begin
+	insert into Bookings values(@p_bookingId, @p_hotId, @p_stDateId, @p_eDateId, @p_custId, @p_methodId, @p_payId, @p_roomId)
+end
+
+create procedure proc_newHotel(@p_hotId int, @p_hotName varchar(255), @p_hotAddress varchar(255), @p_hotNumRooms int)
+as
+begin
+	insert into Hotels values(@p_hotId, @p_hotName, @p_hotAddress, @p_hotNumRooms)
+end
