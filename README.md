@@ -1,25 +1,26 @@
-# PROJECT NAME
+# Washington D.C. Hotel Travel Agency
 
 ## Project Description
 
-Here goes your awesome project description!
+This project is meant to replicate the data of a hotel booking agency working out of Washington, D.C. They store customers, hotels, and associated booking dates and payment info. The data is stored in a normalized SQL Server database, extracted, transformed, and loaded into a denormalized data warehouse using SQL Server Integration Services. It is then converted into an OLAP Cube and stored with SQL Server Analytics Services. The cube is used as a data source to generate elegant reports using SQL Server Reporting Services.
 
 ## Technologies Used
 
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
+* Microsoft SQL Server
+* SSIS
+* SSAS
+* SSRS
 
 ## Features
 
-List of features ready and TODOs for future development
+List of features
 * Awesome feature 1
 * Awesome feature 2
 * Awesome feature 3
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Add more fact tables and measures so there is more data to analyze
+* Get more demographic info about our customers so that we know who to market to in the future
 
 ## Getting Started
    
@@ -38,9 +39,12 @@ To-do list:
 
 ## Contributors
 
-> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+Dakota Wells (Lead)
+Ayanes Arapioannou
+Robert Palmer
+Spencer Barck
 
 ## License
 
-This project uses the following license: [<license_name>](<link>).
+This project uses the following license: [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
