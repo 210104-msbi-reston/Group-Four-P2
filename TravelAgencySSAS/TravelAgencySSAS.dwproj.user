@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>DESKTOP-AU7D43G\TRAININGSERVER</TargetServer>
         <TargetDatabase>TravelAgencySSAS</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

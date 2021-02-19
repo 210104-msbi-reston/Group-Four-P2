@@ -8,40 +8,40 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Travel Agency DW Final.cube</Name>
-      <FullPath>Travel Agency DW Final.cube</FullPath>
+      <Name>Travel Agency DW 1.cube</Name>
+      <FullPath>Travel Agency DW 1.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Travel Agency DW Final.partitions</Name>
-          <FullPath>Travel Agency DW Final.partitions</FullPath>
+          <Name>Travel Agency DW 1.partitions</Name>
+          <FullPath>Travel Agency DW 1.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Dim Date.dim</Name>
-      <FullPath>Dim Date.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Dim Payment Types.dim</Name>
-      <FullPath>Dim Payment Types.dim</FullPath>
+      <Name>Dim Booking Method.dim</Name>
+      <FullPath>Dim Booking Method.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Customer.dim</Name>
       <FullPath>Dim Customer.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Dim Hotel.dim</Name>
+      <FullPath>Dim Hotel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Payment Types.dim</Name>
+      <FullPath>Dim Payment Types.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Dim Room Types.dim</Name>
       <FullPath>Dim Room Types.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Booking Method.dim</Name>
-      <FullPath>Dim Booking Method.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Dim Hotel.dim</Name>
-      <FullPath>Dim Hotel.dim</FullPath>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -64,7 +64,7 @@
           <ConfigurationSetting>
             <Id>Travel Agency DW</Id>
             <Name>Travel Agency DW</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=SLEDGEHAMMER;Integrated Security=SSPI;Initial Catalog=TravelAgencyDW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DESKTOP-AU7D43G\TRAININGSERVER;Integrated Security=SSPI;Initial Catalog=TravelAgencyDW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>

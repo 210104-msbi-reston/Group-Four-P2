@@ -3,32 +3,32 @@
     <DataSources>
       <DataSource>
         <ID>Travel Agency DW</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=SLEDGEHAMMER;Integrated Security=SSPI;Initial Catalog=TravelAgencyDW</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-AU7D43G\TRAININGSERVER;Integrated Security=SSPI;Initial Catalog=TravelAgencyDW</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
-          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">S</Account>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">DESKTOP-AU7D43G\dakot</Account>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Dim Date</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Payment Types</ID>
+        <ID>Dim Booking Method</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Customer</ID>
       </Dimension>
       <Dimension>
+        <ID>Dim Hotel</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Payment Types</ID>
+      </Dimension>
+      <Dimension>
         <ID>Dim Room Types</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Booking Method</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Hotel</ID>
+        <ID>Dim Date</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
