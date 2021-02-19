@@ -8,17 +8,21 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Travel Agency DW 1.cube</Name>
-      <FullPath>Travel Agency DW 1.cube</FullPath>
+      <Name>Travel Agency DW.cube</Name>
+      <FullPath>Travel Agency DW.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Travel Agency DW 1.partitions</Name>
-          <FullPath>Travel Agency DW 1.partitions</FullPath>
+          <Name>Travel Agency DW.partitions</Name>
+          <FullPath>Travel Agency DW.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
+    <ProjectItem>
+      <Name>Dim Date.dim</Name>
+      <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
     <ProjectItem>
       <Name>Dim Booking Method.dim</Name>
       <FullPath>Dim Booking Method.dim</FullPath>
@@ -38,10 +42,6 @@
     <ProjectItem>
       <Name>Dim Room Types.dim</Name>
       <FullPath>Dim Room Types.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Dim Date.dim</Name>
-      <FullPath>Dim Date.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

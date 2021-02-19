@@ -13,6 +13,9 @@
     </DataSources>
     <Dimensions>
       <Dimension>
+        <ID>Dim Date</ID>
+      </Dimension>
+      <Dimension>
         <ID>Dim Booking Method</ID>
       </Dimension>
       <Dimension>
@@ -26,9 +29,6 @@
       </Dimension>
       <Dimension>
         <ID>Dim Room Types</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Dim Date</ID>
       </Dimension>
     </Dimensions>
     <Cubes>

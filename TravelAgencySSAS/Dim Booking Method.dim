@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bab3e699-cdca-4705-af40-87b3b8ca35a1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2ea70cf8-cfa9-4ff2-89e2-642c95c14971" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Booking Method</ID>
   <Name>Dim Booking Method</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,28 +42,51 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c728e30d-c677-4fc6-8d96-57b6826e790b">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="44a81b70-23d0-45fb-82ea-95a4b51c4621">
     <DataSourceViewID>Travel Agency DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="abe902b1-4263-40cc-94e3-49c0fd88f0dd">
+  <ErrorConfiguration dwd:design-time-name="d977248a-1a92-4f52-ba2d-dd7cd5cddf50">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="2515bdcf-c385-4c30-b71f-c1f8e6834752">
+    <Attribute dwd:design-time-name="e57af963-1ef5-4c33-85a7-c9212523e177">
       <ID>Booking Method Id</ID>
       <Name>Booking Method Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6c76e345-ad00-4e61-90b2-7e751ccc76e5">
+        <KeyColumn dwd:design-time-name="16caaa91-ea47-4ebd-915a-edf7edb60afb">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="017f8580-21fe-4d2e-ac1e-310ea46f223e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af452ec3-7efb-459c-a122-59f8f35e3f1d">
             <TableID>dbo_dimBookingMethod</TableID>
             <ColumnID>bookingMethodId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5842249f-d7ed-4590-a6cb-1123ee22d95c">
+          <AttributeID>Booking Method Type</AttributeID>
+          <Name>Booking Method Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="92f114e4-fb53-4cf9-88c7-670bebee902b">
+      <ID>Booking Method Type</ID>
+      <Name>Booking Method Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6f361e5b-08e3-4346-8b4d-8064b8f21e81">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="217a84bb-f041-438d-be09-c07fece07181">
+            <TableID>dbo_dimBookingMethod</TableID>
+            <ColumnID>bookingMethodType</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
