@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>Travel_Agency_Source</DataSourceReference>
+      <CommandText> SELECT NON EMPTY { [Measures].[Fact Bookings Count], [Measures].[Cost] } ON COLUMNS, NON EMPTY { ([Dim Hotel].[Hotel Name].[Hotel Name].ALLMEMBERS * [End Date].[Date Year].[Date Year].ALLMEMBERS * [End Date].[Date Quarter].[Date Quarter].ALLMEMBERS * [End Date].[Date Month].[Date Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW Final] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>MDX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Hotel</DimensionName>
+                    <HierarchyName>Hotel Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Hotel].[Hotel Name]</HierarchyUniqueName>
+                    <LevelName>Hotel Name</LevelName>
+                    <UniqueName>[Dim Hotel].[Hotel Name].[Hotel Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Hotel Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>End Date</DimensionName>
+                    <HierarchyName>Date Year</HierarchyName>
+                    <HierarchyUniqueName>[End Date].[Date Year]</HierarchyUniqueName>
+                    <LevelName>Date Year</LevelName>
+                    <UniqueName>[End Date].[Date Year].[Date Year]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date Year</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>End Date</DimensionName>
+                    <HierarchyName>Date Quarter</HierarchyName>
+                    <HierarchyUniqueName>[End Date].[Date Quarter]</HierarchyUniqueName>
+                    <LevelName>Date Quarter</LevelName>
+                    <UniqueName>[End Date].[Date Quarter].[Date Quarter]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date Quarter</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>End Date</DimensionName>
+                    <HierarchyName>Date Month</HierarchyName>
+                    <HierarchyUniqueName>[End Date].[Date Month]</HierarchyUniqueName>
+                    <LevelName>Date Month</LevelName>
+                    <UniqueName>[End Date].[Date Month].[Date Month]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date Month</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Fact Bookings Count</MeasureName>
+                    <UniqueName>[Measures].[Fact Bookings Count]</UniqueName>
+                  </ID>
+                  <ItemCaption>Fact Bookings Count</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Cost</MeasureName>
+                    <UniqueName>[Measures].[Cost]</UniqueName>
+                  </ID>
+                  <ItemCaption>Cost</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Travel Agency DW Final</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement> SELECT NON EMPTY { [Measures].[Fact Bookings Count], [Measures].[Cost] } ON COLUMNS, NON EMPTY { ([Dim Hotel].[Hotel Name].[Hotel Name].ALLMEMBERS * [End Date].[Date Year].[Date Year].ALLMEMBERS * [End Date].[Date Quarter].[Date Quarter].ALLMEMBERS * [End Date].[Date Month].[Date Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW Final] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Hotel_Name">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Dim Hotel].[Hotel Name].[Hotel Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date_Year">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[End Date].[Date Year].[Date Year]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date_Quarter">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[End Date].[Date Quarter].[Date Quarter]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date_Month">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[End Date].[Date Month].[Date Month]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Fact_Bookings_Count">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Fact Bookings Count]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Cost">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Cost]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

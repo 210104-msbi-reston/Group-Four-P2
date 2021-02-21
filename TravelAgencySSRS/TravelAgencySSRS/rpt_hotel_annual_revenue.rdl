@@ -1401,6 +1401,11 @@
                             <Action>
                               <Drillthrough>
                                 <ReportName>rpt_Account_Type</ReportName>
+                                <Parameters>
+                                  <Parameter Name="DimHotelHotelName">
+                                    <Value>=Fields!Hotel_Name.UniqueName</Value>
+                                  </Parameter>
+                                </Parameters>
                               </Drillthrough>
                             </Action>
                           </Actions>
@@ -1416,6 +1421,7 @@
                           <PaddingBottom>2pt</PaddingBottom>
                         </Style>
                       </Textbox>
+                      <rd:Selected>true</rd:Selected>
                     </CellContents>
                   </TablixHeader>
                   <TablixMembers>

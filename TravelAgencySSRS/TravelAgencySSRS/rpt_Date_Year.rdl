@@ -13,7 +13,7 @@
     <DataSet Name="StartDateDateYear">
       <Query>
         <DataSourceName>DataSource_Date_Year</DataSourceName>
-        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Start Date].[Date Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Start Date].[Date Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Start Date].[Date Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Start Date].[Date Year].ALLMEMBERS ON ROWS FROM [Travel Agency DW]</CommandText>
+        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Start Date].[Date Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Start Date].[Date Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Start Date].[Date Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Start Date].[Date Year].ALLMEMBERS ON ROWS FROM [Travel Agency DW Final]</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -48,7 +48,7 @@
                 </Items>
               </Select>
               <AutoExecute>false</AutoExecute>
-              <From>Travel Agency DW</From>
+              <From>Travel Agency DW Final</From>
               <Filter>
                 <FilterItems />
               </Filter>
@@ -57,7 +57,7 @@
               <QueryProperties />
             </QuerySpecification>
             <Query>
-              <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Start Date].[Date Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Start Date].[Date Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Start Date].[Date Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Start Date].[Date Year].ALLMEMBERS ON ROWS FROM [Travel Agency DW]</Statement>
+              <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Start Date].[Date Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Start Date].[Date Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Start Date].[Date Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Start Date].[Date Year].ALLMEMBERS ON ROWS FROM [Travel Agency DW Final]</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
@@ -92,7 +92,7 @@
             <Value>=Parameters!StartDateDateYear.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Start Date].[Date Year].[Date Year].ALLMEMBERS * [Start Date].[Date Month].[Date Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@StartDateDateYear, CONSTRAINED) ) ON COLUMNS FROM [Travel Agency DW]) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Start Date].[Date Year].[Date Year].ALLMEMBERS * [Start Date].[Date Quarter].[Date Quarter].ALLMEMBERS * [Start Date].[Date Month].[Date Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@StartDateDateYear, CONSTRAINED) ) ON COLUMNS FROM [Travel Agency DW Final]) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -108,6 +108,17 @@
                       <UniqueName>[Start Date].[Date Year].[Date Year]</UniqueName>
                     </ID>
                     <ItemCaption>Date Year</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Start Date</DimensionName>
+                      <HierarchyName>Date Quarter</HierarchyName>
+                      <HierarchyUniqueName>[Start Date].[Date Quarter]</HierarchyUniqueName>
+                      <LevelName>Date Quarter</LevelName>
+                      <UniqueName>[Start Date].[Date Quarter].[Date Quarter]</UniqueName>
+                    </ID>
+                    <ItemCaption>Date Quarter</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -156,7 +167,7 @@
                 </Items>
               </Select>
               <AutoExecute>false</AutoExecute>
-              <From>Travel Agency DW</From>
+              <From>Travel Agency DW Final</From>
               <Filter>
                 <FilterItems>
                   <FilterItem>
@@ -188,7 +199,7 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Start Date].[Date Year].[Date Year].ALLMEMBERS * [Start Date].[Date Month].[Date Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@StartDateDateYear, CONSTRAINED) ) ON COLUMNS FROM [Travel Agency DW]) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Start Date].[Date Year].[Date Year].ALLMEMBERS * [Start Date].[Date Quarter].[Date Quarter].ALLMEMBERS * [Start Date].[Date Month].[Date Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@StartDateDateYear, CONSTRAINED) ) ON COLUMNS FROM [Travel Agency DW Final]) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions>
                 <ParameterDefinition>
                   <Name>StartDateDateYear</Name>
@@ -201,7 +212,7 @@
                   <Caption>Start Date.Date Year</Caption>
                   <HierarchyUniqueName>[Start Date].[Date Year]</HierarchyUniqueName>
                   <ParameterValuesQuery>
-                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Start Date].[Date Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Start Date].[Date Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Start Date].[Date Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Start Date].[Date Year].ALLMEMBERS ON ROWS FROM [Travel Agency DW]</Statement>
+                    <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Start Date].[Date Year].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Start Date].[Date Year].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Start Date].[Date Year].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Start Date].[Date Year].ALLMEMBERS ON ROWS FROM [Travel Agency DW Final]</Statement>
                     <ParameterizedStatement>
                       <ReferencedParameters />
                     </ParameterizedStatement>
@@ -216,6 +227,10 @@
       <Fields>
         <Field Name="Date_Year">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Start Date].[Date Year].[Date Year]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Date_Quarter">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Start Date].[Date Quarter].[Date Quarter]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Date_Month">
@@ -248,10 +263,10 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Date_Month.Value</Value>
+                      <Value>=Fields!Date_Quarter.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=MonthName(Fields!Date_Month.Value)</Label>
+                  <Label>=Switch(Fields!Date_Month.Value=1,"Jan",Fields!Date_Month.Value=2,"Feb",Fields!Date_Month.Value=3,"Mar",Fields!Date_Month.Value=4,"Apr",Fields!Date_Month.Value=5,"May",Fields!Date_Month.Value=6,"June",Fields!Date_Month.Value=7,"July",Fields!Date_Month.Value=8,"Aug",Fields!Date_Month.Value=9,"Sept",Fields!Date_Month.Value=10,"Oct",Fields!Date_Month.Value=11,"Nov",Fields!Date_Month.Value=12,"Dec")</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -613,10 +628,10 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Date_Month.Value</Value>
+                      <Value>=Fields!Date_Quarter.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=MonthName(Fields!Date_Month.Value)</Label>
+                  <Label>=Switch(Fields!Date_Month.Value=1,"Jan",Fields!Date_Month.Value=2,"Feb",Fields!Date_Month.Value=3,"Mar",Fields!Date_Month.Value=4,"Apr",Fields!Date_Month.Value=5,"May",Fields!Date_Month.Value=6,"June",Fields!Date_Month.Value=7,"July",Fields!Date_Month.Value=8,"Aug",Fields!Date_Month.Value=9,"Sept",Fields!Date_Month.Value=10,"Oct",Fields!Date_Month.Value=11,"Nov",Fields!Date_Month.Value=12,"Dec")</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>

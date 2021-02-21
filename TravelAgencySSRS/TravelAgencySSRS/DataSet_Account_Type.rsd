@@ -3,7 +3,7 @@
   <DataSet Name="DataSet1">
     <Query>
       <DataSourceReference>Travel_Agency_Source</DataSourceReference>
-      <CommandText> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Dim Hotel].[Hotel Name].[Hotel Name].ALLMEMBERS * [Dim Customer].[Cust Account Type].[Cust Account Type].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+      <CommandText> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Dim Hotel].[Hotel Name].[Hotel Name].ALLMEMBERS * [Dim Customer].[Cust Account Type].[Cust Account Type].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW Final] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
       <rd:DesignerState>
         <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
           <CommandType>MDX</CommandType>
@@ -67,7 +67,7 @@
               </Items>
             </Select>
             <AutoExecute>false</AutoExecute>
-            <From>Travel Agency DW</From>
+            <From>Travel Agency DW Final</From>
             <Filter>
               <FilterItems />
             </Filter>
@@ -78,7 +78,7 @@
             </QueryProperties>
           </QuerySpecification>
           <Query>
-            <Statement> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Dim Hotel].[Hotel Name].[Hotel Name].ALLMEMBERS * [Dim Customer].[Cust Account Type].[Cust Account Type].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+            <Statement> SELECT NON EMPTY { [Measures].[Cost], [Measures].[Fact Bookings Count] } ON COLUMNS, NON EMPTY { ([Dim Hotel].[Hotel Name].[Hotel Name].ALLMEMBERS * [Dim Customer].[Cust Account Type].[Cust Account Type].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW Final] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
             <ParameterDefinitions />
           </Query>
         </QueryDefinition>
