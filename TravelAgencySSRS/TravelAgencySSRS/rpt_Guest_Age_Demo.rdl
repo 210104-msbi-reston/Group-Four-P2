@@ -276,7 +276,6 @@
                         <Color>#5c5c5c</Color>
                       </Style>
                     </ChartAxisTitle>
-                    <Interval>250</Interval>
                     <ChartMajorGridLines>
                       <Style>
                         <Border>
@@ -311,7 +310,7 @@
                       <Length>0.5</Length>
                     </ChartMinorTickMarks>
                     <CrossAt>NaN</CrossAt>
-                    <Minimum>2000</Minimum>
+                    <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
                     <ChartAxisScaleBreak>
                       <Style />
@@ -458,6 +457,8 @@
                       <ChartDataLabel>
                         <Style>
                           <FontWeight>Bold</FontWeight>
+                          <Format>'$'#,0;('$'#,0)</Format>
+                          <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                         </Style>
                         <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>true</Visible>
@@ -626,7 +627,6 @@
                         <Color>#5c5c5c</Color>
                       </Style>
                     </ChartAxisTitle>
-                    <Interval>100000</Interval>
                     <ChartMajorGridLines>
                       <Style>
                         <Border>
@@ -661,7 +661,7 @@
                       <Length>0.5</Length>
                     </ChartMinorTickMarks>
                     <CrossAt>NaN</CrossAt>
-                    <Minimum>1250000</Minimum>
+                    <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
                     <ChartAxisScaleBreak>
                       <Style />
