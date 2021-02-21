@@ -823,7 +823,7 @@
                       <Length>0.5</Length>
                     </ChartMinorTickMarks>
                     <CrossAt>NaN</CrossAt>
-                    <Minimum>6400</Minimum>
+                    <Minimum>68000</Minimum>
                     <Maximum>NaN</Maximum>
                     <ChartAxisScaleBreak>
                       <Style />
@@ -1166,7 +1166,7 @@
                       <Length>0.5</Length>
                     </ChartMinorTickMarks>
                     <CrossAt>NaN</CrossAt>
-                    <Minimum>2150000</Minimum>
+                    <Minimum>28000000</Minimum>
                     <Maximum>NaN</Maximum>
                     <ChartAxisScaleBreak>
                       <Style />
