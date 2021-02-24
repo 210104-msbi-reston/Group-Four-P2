@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "TravelAgencySSIS-DB-to-DW", "TravelAgencySSIS-DB-to-DW.dtproj", "{6BDB33D9-055D-485E-9402-F14BCBC5F83F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BDB33D9-055D-485E-9402-F14BCBC5F83F}.Development|Default.ActiveCfg = Development
+		{6BDB33D9-055D-485E-9402-F14BCBC5F83F}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFA40FDF-2FD6-4872-9E03-6DF496ED955C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>Travel_Agency_Source</DataSourceReference>
+      <CommandText> SELECT NON EMPTY { [Measures].[Cost] } ON COLUMNS, NON EMPTY { ([Dim Customer].[Cust Id].[Cust Id].ALLMEMBERS * [Dim Customer].[Cust Name].[Cust Name].ALLMEMBERS * [Start Date].[Date].[Date].ALLMEMBERS * [End Date].[Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+      <rd:DesignerState>
+        <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+          <CommandType>MDX</CommandType>
+          <QuerySpecification xsi:type="MDXQuerySpecification">
+            <Select>
+              <Items>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Customer</DimensionName>
+                    <HierarchyName>Cust Id</HierarchyName>
+                    <HierarchyUniqueName>[Dim Customer].[Cust Id]</HierarchyUniqueName>
+                    <LevelName>Cust Id</LevelName>
+                    <UniqueName>[Dim Customer].[Cust Id].[Cust Id]</UniqueName>
+                  </ID>
+                  <ItemCaption>Cust Id</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Dim Customer</DimensionName>
+                    <HierarchyName>Cust Name</HierarchyName>
+                    <HierarchyUniqueName>[Dim Customer].[Cust Name]</HierarchyUniqueName>
+                    <LevelName>Cust Name</LevelName>
+                    <UniqueName>[Dim Customer].[Cust Name].[Cust Name]</UniqueName>
+                  </ID>
+                  <ItemCaption>Cust Name</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>Start Date</DimensionName>
+                    <HierarchyName>Date</HierarchyName>
+                    <HierarchyUniqueName>[Start Date].[Date]</HierarchyUniqueName>
+                    <LevelName>Date</LevelName>
+                    <UniqueName>[Start Date].[Date].[Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Level">
+                    <DimensionName>End Date</DimensionName>
+                    <HierarchyName>Date</HierarchyName>
+                    <HierarchyUniqueName>[End Date].[Date]</HierarchyUniqueName>
+                    <LevelName>Date</LevelName>
+                    <UniqueName>[End Date].[Date].[Date]</UniqueName>
+                  </ID>
+                  <ItemCaption>Date</ItemCaption>
+                  <UniqueName>true</UniqueName>
+                </Item>
+                <Item>
+                  <ID xsi:type="Measure">
+                    <MeasureName>Cost</MeasureName>
+                    <UniqueName>[Measures].[Cost]</UniqueName>
+                  </ID>
+                  <ItemCaption>Cost</ItemCaption>
+                  <BackColor>true</BackColor>
+                  <ForeColor>true</ForeColor>
+                  <FontFamily>true</FontFamily>
+                  <FontSize>true</FontSize>
+                  <FontWeight>true</FontWeight>
+                  <FontStyle>true</FontStyle>
+                  <FontDecoration>true</FontDecoration>
+                  <FormattedValue>true</FormattedValue>
+                  <FormatString>true</FormatString>
+                </Item>
+              </Items>
+            </Select>
+            <AutoExecute>false</AutoExecute>
+            <From>Travel Agency DW</From>
+            <Filter>
+              <FilterItems />
+            </Filter>
+            <Calculations />
+            <Aggregates />
+            <QueryProperties>
+              <IncludeMemberValue>true</IncludeMemberValue>
+            </QueryProperties>
+          </QuerySpecification>
+          <Query>
+            <Statement> SELECT NON EMPTY { [Measures].[Cost] } ON COLUMNS, NON EMPTY { ([Dim Customer].[Cust Id].[Cust Id].ALLMEMBERS * [Dim Customer].[Cust Name].[Cust Name].ALLMEMBERS * [Start Date].[Date].[Date].ALLMEMBERS * [End Date].[Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Travel Agency DW] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+            <ParameterDefinitions />
+          </Query>
+        </QueryDefinition>
+      </rd:DesignerState>
+    </Query>
+    <Fields>
+      <Field Name="Cust_Id">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Dim Customer].[Cust Id].[Cust Id]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Cust_Name">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Dim Customer].[Cust Name].[Cust Name]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Start Date].[Date].[Date]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Date2">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[End Date].[Date].[Date]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Cost">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Cost]" /&gt;</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
